@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="smarchGlasses" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" mapType="standard" pitchEnabled="NO" showsUserLocation="YES" showsBuildings="NO" showsCompass="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFb-n7-cvf">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mk-7Z-xfr">
+                                <rect key="frame" x="340" y="761" width="25" height="24"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="location.circle.fill" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="centerButton:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y4X-xy-y6W"/>
+                                </connections>
+                            </button>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Where would you like to go today?" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uu9-4Z-Sje">
+                                <rect key="frame" x="0.0" y="44" width="390" height="56"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search" textContentType="location"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="searchField.textColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="searchField.backgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </searchBar>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="KoJ-tB-zKs">
+                                <rect key="frame" x="0.0" y="100" width="390" height="18.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vQe-td-4Fb">
+                                <rect key="frame" x="5" y="115" width="380" height="30"/>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="g0Y-sq-Xb4"/>
+                                </constraints>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwR-cJ-wId" userLabel="leftButton">
+                                <rect key="frame" x="117" y="759" width="20" height="22"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="arrow.left.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="leftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="68b-0K-fV3"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="fW4-vp-Art">
+                                <rect key="frame" x="145" y="749" width="100" height="43.333333333333371"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EQ5-GM-WKz"/>
+                                    <constraint firstAttribute="width" constant="100" id="mSn-uS-pb8"/>
+                                </constraints>
+                                <imageReference key="image" image="eyeglasses" catalog="system" symbolScale="large"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9V-bv-zfX" userLabel="rightButton">
+                                <rect key="frame" x="253" y="759" width="20" height="22"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="arrow.right.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="rightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cbU-7v-t35"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONNECTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewV-sE-Qd2">
+                                <rect key="frame" x="144" y="789" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KoJ-tB-zKs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="071-qk-0cu"/>
+                            <constraint firstItem="O9V-bv-zfX" firstAttribute="leading" secondItem="fW4-vp-Art" secondAttribute="trailing" constant="8" symbolic="YES" id="1iR-SQ-MhF"/>
+                            <constraint firstItem="vQe-td-4Fb" firstAttribute="top" secondItem="uu9-4Z-Sje" secondAttribute="bottom" constant="15" id="1vZ-uO-c7u"/>
+                            <constraint firstItem="ewV-sE-Qd2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="22z-Se-WIj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1mk-7Z-xfr" secondAttribute="trailing" constant="25" id="2DR-N6-h3e"/>
+                            <constraint firstItem="fW4-vp-Art" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Uw-8P-r12"/>
+                            <constraint firstItem="KoJ-tB-zKs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4nw-KM-ufk"/>
+                            <constraint firstItem="KoJ-tB-zKs" firstAttribute="top" secondItem="uu9-4Z-Sje" secondAttribute="bottom" id="4tB-SV-RYd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CwR-cJ-wId" secondAttribute="bottom" constant="29" id="65k-hd-Poi"/>
+                            <constraint firstItem="oFb-n7-cvf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BI3-BD-VaP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1mk-7Z-xfr" secondAttribute="bottom" constant="25" id="J2D-jZ-B56"/>
+                            <constraint firstItem="uu9-4Z-Sje" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LN7-FS-ApG"/>
+                            <constraint firstItem="fW4-vp-Art" firstAttribute="leading" secondItem="CwR-cJ-wId" secondAttribute="trailing" constant="8" symbolic="YES" id="M4z-DK-Ayf"/>
+                            <constraint firstItem="fW4-vp-Art" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-15" id="O1Y-2g-D1V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uu9-4Z-Sje" secondAttribute="trailing" id="a6P-2J-vVj"/>
+                            <constraint firstItem="oFb-n7-cvf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gGj-S9-vgm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vQe-td-4Fb" secondAttribute="trailing" constant="5" id="ibs-3p-8tV"/>
+                            <constraint firstItem="vQe-td-4Fb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="l5x-Wj-Kqp"/>
+                            <constraint firstItem="ewV-sE-Qd2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mhs-SN-wtz"/>
+                            <constraint firstAttribute="bottom" secondItem="oFb-n7-cvf" secondAttribute="bottom" id="mpx-ZF-2OM"/>
+                            <constraint firstItem="uu9-4Z-Sje" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vDI-gt-Vav"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="O9V-bv-zfX" secondAttribute="bottom" constant="29" id="vsA-8R-w9b"/>
+                            <constraint firstItem="oFb-n7-cvf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zNt-bP-YHy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="directionLabel" destination="KoJ-tB-zKs" id="8bG-bA-K2K"/>
+                        <outlet property="glassesConnected" destination="fW4-vp-Art" id="qh7-0B-CkD"/>
+                        <outlet property="glassesConnectedLabel" destination="ewV-sE-Qd2" id="1zD-8P-2LB"/>
+                        <outlet property="leftButtonOutlet" destination="CwR-cJ-wId" id="maS-Ah-ET6"/>
+                        <outlet property="mapView" destination="oFb-n7-cvf" id="Lux-bm-99t"/>
+                        <outlet property="progressView" destination="vQe-td-4Fb" id="1X3-a0-2ai"/>
+                        <outlet property="rightButtonOutlet" destination="O9V-bv-zfX" id="Tzg-ld-NVh"/>
+                        <outlet property="searchBar" destination="uu9-4Z-Sje" id="An1-bC-Xb7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.38461538461539" y="136.49289099526067"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.left.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="arrow.right.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="eyeglasses" catalog="system" width="128" height="54"/>
+        <image name="location.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
