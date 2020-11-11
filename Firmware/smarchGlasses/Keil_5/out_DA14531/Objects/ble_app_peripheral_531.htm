@@ -1,0 +1,2809 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\out_DA14531\Objects\ble_app_peripheral_531.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\out_DA14531\Objects\ble_app_peripheral_531.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Wed Nov 04 22:44:39 2020
+<BR><P>
+<H3>Maximum Stack Usage =        136 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; system_init &rArr; periph_init &rArr; set_pad_functions &rArr; GPIO_ConfigurePin &rArr; GPIO_SetPinFunction
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[3]">SVC_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[3]">SVC_Handler</a><BR>
+ <LI><a href="#[4]">PendSV_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[4]">PendSV_Handler</a><BR>
+ <LI><a href="#[5]">SysTick_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[5]">SysTick_Handler</a><BR>
+ <LI><a href="#[e]">BLE_RF_DIAG_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[e]">BLE_RF_DIAG_Handler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[c]">ADC_Handler</a> from adc_531.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[e]">BLE_RF_DIAG_Handler</a> from startup_da14531.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[6]">BLE_WAKEUP_LP_Handler</a> from rwble.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[19]">DMA_Handler</a> from startup_da14531.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[10]">GPIO0_Handler</a> from gpio.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[11]">GPIO1_Handler</a> from gpio.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[12]">GPIO2_Handler</a> from gpio.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[13]">GPIO3_Handler</a> from gpio.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[14]">GPIO4_Handler</a> from gpio.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[2]">HardFault_Handler</a> from startup_da14531.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[22]">HardFault_HandlerC</a> from hardfault_handler.o(.text) referenced from startup_da14531.o(.text)
+ <LI><a href="#[a]">I2C_Handler</a> from i2c.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[69]">JT_l2cc_pdu_recv_ind_handler_func</a> from patch.o(.text) referenced from jump_table.o(.constdata)
+ <LI><a href="#[66]">JT_l2cc_pdu_unpack_func</a> from patch.o(.text) referenced from jump_table.o(.constdata)
+ <LI><a href="#[59]">JT_lld_test_mode_rx_func</a> from patch.o(.text) referenced from jump_table.o(.constdata)
+ <LI><a href="#[d]">KEYBRD_Handler</a> from startup_da14531.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[1]">NMI_Handler</a> from startup_da14531.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[21]">NMI_HandlerC</a> from nmi_handler.o(.text) referenced from startup_da14531.o(.text)
+ <LI><a href="#[6f]">PK_PointMult_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[4]">PendSV_Handler</a> from startup_da14531.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[28]">RADIOCNTL_Handler</a> from ble_arp.o(.text) referenced from ble_arp.o(.text)
+ <LI><a href="#[1b]">RESERVED21_Handler</a> from startup_da14531.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[1c]">RESERVED22_Handler</a> from startup_da14531.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[1d]">RESERVED23_Handler</a> from startup_da14531.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[f]">RFCAL_Handler</a> from startup_da14531.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[18]">RTC_Handler</a> from startup_da14531.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[0]">Reset_Handler</a> from startup_da14531.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[b]">SPI_Handler</a> from startup_da14531.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[3]">SVC_Handler</a> from startup_da14531.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[17]">SWTIM1_Handler</a> from startup_da14531.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[15]">SWTIM_Handler</a> from startup_da14531.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[5]">SysTick_Handler</a> from startup_da14531.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[1f]">SystemInit</a> from system_da14531.o(.text) referenced from startup_da14531.o(.text)
+ <LI><a href="#[9]">UART2_Handler</a> from uart.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[8]">UART_Handler</a> from da14531_symbols.txt(ABSOLUTE) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[3a]">UART_Handler_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[16]">WKUP_QUADEC_Handler</a> from wkupct_quadec.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[1a]">XTAL32M_RDY_Handler</a> from startup_da14531.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[20]">__main</a> from entry.o(.ARM.Collect$$$$00000000) referenced from startup_da14531.o(.text)
+ <LI><a href="#[2f]">adv_data_update_timer_cb</a> from user_peripheral.o(.text) referenced from user_peripheral.o(.text)
+ <LI><a href="#[ac]">app_custs1_create_db</a> from app_customs.o(.text) referenced from user_custs_config.o(.constdata)
+ <LI><a href="#[a9]">app_custs1_process_handler</a> from app_customs_task.o(.text) referenced from app_entry_point.o(.constdata)
+ <LI><a href="#[ab]">app_db_init_next</a> from app.o(.text) referenced from app_entry_point.o(.constdata)
+ <LI><a href="#[97]">app_diss_create_db</a> from app_diss.o(.text) referenced from app.o(.constdata)
+ <LI><a href="#[a8]">app_diss_process_handler</a> from app_diss_task.o(.text) referenced from app_entry_point.o(.constdata)
+ <LI><a href="#[aa]">app_easy_gap_dev_configure</a> from app.o(.text) referenced from app_entry_point.o(.constdata)
+ <LI><a href="#[a6]">app_gap_process_handler</a> from app_task.o(.text) referenced from app_entry_point.o(.constdata)
+ <LI><a href="#[a7]">app_timer_api_process_handler</a> from app_easy_timer.o(.text) referenced from app_entry_point.o(.constdata)
+ <LI><a href="#[6c]">attc_l2cc_pdu_recv_handler_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[6b]">atts_l2cc_pdu_recv_handler_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[7a]">ba431_get_rand_func</a> from jump_table.o(.text) referenced from jump_table.o(.constdata)
+ <LI><a href="#[7e]">ble_init_arp_func</a> from ble_arp.o(.text) referenced from jump_table.o(.constdata)
+ <LI><a href="#[6d]">crypto_init_func</a> from jump_table.o(.text) referenced from jump_table.o(.constdata)
+ <LI><a href="#[87]">custs1_att_info_rsp_handler</a> from da14531_symbols.txt(ABSOLUTE) referenced from custs1_task.o(.constdata)
+ <LI><a href="#[8a]">custs1_prf_itf_get</a> from da14531_symbols.txt(ABSOLUTE) referenced from prf.o(.constdata)
+ <LI><a href="#[86]">custs1_val_ind_req_handler</a> from da14531_symbols.txt(ABSOLUTE) referenced from custs1_task.o(.constdata)
+ <LI><a href="#[84]">custs1_val_ntf_req_handler</a> from da14531_symbols.txt(ABSOLUTE) referenced from custs1_task.o(.constdata)
+ <LI><a href="#[85]">custs1_val_set_req_handler</a> from da14531_symbols.txt(ABSOLUTE) referenced from custs1_task.o(.constdata)
+ <LI><a href="#[88]">custs1_value_req_rsp_handler</a> from da14531_symbols.txt(ABSOLUTE) referenced from custs1_task.o(.constdata)
+ <LI><a href="#[7f]">custs_get_func_callbacks</a> from app_customs.o(.text) referenced from custs1.o(.constdata)
+ <LI><a href="#[62]">dbg_init_func_empty</a> from jump_table.o(.text) referenced from jump_table.o(.constdata)
+ <LI><a href="#[63]">dbg_platform_reset_complete_func_empty</a> from jump_table.o(.text) referenced from jump_table.o(.constdata)
+ <LI><a href="#[96]">default_app_generate_static_random_addr</a> from app_default_handlers.o(.text) referenced 3 times from app.o(.constdata)
+ <LI><a href="#[90]">default_app_on_db_init_complete</a> from app_default_handlers.o(.text) referenced 3 times from app.o(.constdata)
+ <LI><a href="#[92]">default_app_on_get_dev_appearance</a> from app_default_handlers.o(.text) referenced 3 times from app.o(.constdata)
+ <LI><a href="#[91]">default_app_on_get_dev_name</a> from app_default_handlers.o(.text) referenced 3 times from app.o(.constdata)
+ <LI><a href="#[93]">default_app_on_get_dev_slv_pref_params</a> from app_default_handlers.o(.text) referenced 3 times from app.o(.constdata)
+ <LI><a href="#[8e]">default_app_on_set_dev_config_complete</a> from app_default_handlers.o(.text) referenced 3 times from app.o(.constdata)
+ <LI><a href="#[94]">default_app_on_set_dev_info</a> from app_default_handlers.o(.text) referenced 3 times from app.o(.constdata)
+ <LI><a href="#[95]">default_app_update_params_request</a> from app_default_handlers.o(.text) referenced 3 times from app.o(.constdata)
+ <LI><a href="#[78]">dia_rand_func</a> from jump_table.o(.text) referenced from jump_table.o(.constdata)
+ <LI><a href="#[79]">dia_srand_func</a> from jump_table.o(.text) referenced from jump_table.o(.constdata)
+ <LI><a href="#[89]">diss_prf_itf_get</a> from da14531_symbols.txt(ABSOLUTE) referenced from prf.o(.constdata)
+ <LI><a href="#[a5]">diss_value_req_ind_handler</a> from app_diss_task.o(.text) referenced from app_diss_task.o(.constdata)
+ <LI><a href="#[9a]">gapc_cmp_evt_handler</a> from app_task.o(.text) referenced from app_task.o(.constdata)
+ <LI><a href="#[9b]">gapc_connection_req_ind_handler</a> from app_task.o(.text) referenced from app_task.o(.constdata)
+ <LI><a href="#[9c]">gapc_disconnect_ind_handler</a> from app_task.o(.text) referenced from app_task.o(.constdata)
+ <LI><a href="#[9d]">gapc_get_dev_info_req_ind_handler</a> from app_task.o(.text) referenced from app_task.o(.constdata)
+ <LI><a href="#[a2]">gapc_le_pkt_size_ind_handler_ROM</a> from da14531_symbols.txt(ABSOLUTE) referenced from app_task.o(.constdata)
+ <LI><a href="#[6a]">gapc_lecb_connect_cfm_handler_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[a1]">gapc_param_update_req_ind_handler_ROM</a> from da14531_symbols.txt(ABSOLUTE) referenced from app_task.o(.constdata)
+ <LI><a href="#[a4]">gapc_peer_features_ind_handler_ROM</a> from da14531_symbols.txt(ABSOLUTE) referenced from app_task.o(.constdata)
+ <LI><a href="#[9e]">gapc_set_dev_info_req_ind_handler_ROM</a> from da14531_symbols.txt(ABSOLUTE) referenced from app_task.o(.constdata)
+ <LI><a href="#[a0]">gapm_adv_report_ind_handler_ROM</a> from da14531_symbols.txt(ABSOLUTE) referenced from app_task.o(.constdata)
+ <LI><a href="#[99]">gapm_cmp_evt_handler</a> from app_task.o(.text) referenced from app_task.o(.constdata)
+ <LI><a href="#[98]">gapm_device_ready_ind_handler</a> from app_task.o(.text) referenced from app_task.o(.constdata)
+ <LI><a href="#[9f]">gapm_profile_added_ind_handler_ROM</a> from da14531_symbols.txt(ABSOLUTE) referenced from app_task.o(.constdata)
+ <LI><a href="#[82]">gattc_att_info_req_ind_handler</a> from da14531_symbols.txt(ABSOLUTE) referenced from custs1_task.o(.constdata)
+ <LI><a href="#[83]">gattc_cmp_evt_handler</a> from da14531_symbols.txt(ABSOLUTE) referenced from custs1_task.o(.constdata)
+ <LI><a href="#[80]">gattc_read_req_ind_handler</a> from da14531_symbols.txt(ABSOLUTE) referenced from custs1_task.o(.constdata)
+ <LI><a href="#[a3]">gattc_svc_changed_cfg_ind_handler_ROM</a> from da14531_symbols.txt(ABSOLUTE) referenced from app_task.o(.constdata)
+ <LI><a href="#[81]">gattc_write_req_ind_handler</a> from custs1_task.o(.text) referenced from custs1_task.o(.constdata)
+ <LI><a href="#[3c]">gtl_eif_init_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[3e]">gtl_eif_read_hdr_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[3f]">gtl_eif_read_payl_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[3d]">gtl_eif_read_start_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[41]">gtl_eif_rx_done_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[40]">gtl_eif_tx_done_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[3b]">gtl_init_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[42]">h4tl_init_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[47]">h4tl_out_of_sync_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[44]">h4tl_read_hdr_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[46]">h4tl_read_next_out_of_sync_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[45]">h4tl_read_payl_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[43]">h4tl_read_start_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[49]">h4tl_rx_done_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[48]">h4tl_tx_done_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[64]">hci_rd_local_supp_feats_cmd_handler_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[4a]">ke_task_init_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[4b]">ke_timer_init_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[68]">l2c_process_sdu_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[67]">l2c_send_lecb_message_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[65]">l2cc_pdu_pack_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[74]">llc_le_length_conn_init_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[73]">llc_le_length_effective_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[77]">llc_pdu_send_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[76]">lld_data_tx_check_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[75]">lld_data_tx_prog_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[53]">lld_sleep_compensate_func</a> from rwble.o(.text) referenced from jump_table.o(.constdata)
+ <LI><a href="#[54]">lld_sleep_init_func</a> from arch_system.o(.text) referenced from jump_table.o(.constdata)
+ <LI><a href="#[56]">lld_sleep_lpcycles_2_us_sel_func</a> from arch_system.o(.text) referenced from jump_table.o(.constdata)
+ <LI><a href="#[55]">lld_sleep_us_2_lpcycles_sel_func</a> from arch_system.o(.text) referenced from jump_table.o(.constdata)
+ <LI><a href="#[58]">lld_test_mode_tx_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[57]">lld_test_stop_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[71]">llm_create_p256_key_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[4c]">llm_encryption_done_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[6e]">llm_le_adv_report_ind_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[72]">llm_p256_req_handler_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[70]">llm_p256_start_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[1e]">main</a> from arch_main.o(.text) referenced from entry9a.o(.ARM.Collect$$$$0000000B)
+ <LI><a href="#[4f]">nvds_del_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[4d]">nvds_get_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[50]">nvds_init_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[4e]">nvds_put_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[30]">param_update_request_timer_cb</a> from user_peripheral.o(.text) referenced from user_peripheral.o(.text)
+ <LI><a href="#[52]">platform_reset_func</a> from jump_table.o(.text) referenced from jump_table.o(.constdata)
+ <LI><a href="#[5d]">prf_add_profile_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[5f]">prf_cleanup_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[5e]">prf_create_func</a> from prf.o(.text) referenced from jump_table.o(.constdata)
+ <LI><a href="#[60]">prf_get_id_from_task_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[61]">prf_get_task_from_id_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[5c]">prf_init_func</a> from prf.o(.text) referenced from jump_table.o(.constdata)
+ <LI><a href="#[29]">rf_force_agc_enable</a> from ble_arp.o(.text) referenced from ble_arp.o(.text)
+ <LI><a href="#[32]">rf_init_func</a> from ble_arp.o(.text) referenced from jump_table.o(.constdata)
+ <LI><a href="#[23]">rf_reg_rd</a> from ble_arp.o(.text) referenced from ble_arp.o(.text)
+ <LI><a href="#[24]">rf_reg_wr</a> from ble_arp.o(.text) referenced from ble_arp.o(.text)
+ <LI><a href="#[33]">rf_reinit_func</a> from ble_arp.o(.text) referenced from jump_table.o(.constdata)
+ <LI><a href="#[27]">rf_reset</a> from ble_arp.o(.text) referenced from ble_arp.o(.text)
+ <LI><a href="#[2a]">rf_rssi_convert</a> from ble_arp.o(.text) referenced from ble_arp.o(.text)
+ <LI><a href="#[26]">rf_sleep</a> from ble_arp.o(.text) referenced from ble_arp.o(.text)
+ <LI><a href="#[25]">rf_txpwr_dbm_get</a> from ble_arp.o(.text) referenced from ble_arp.o(.text)
+ <LI><a href="#[7]">rwble_isr</a> from rwble.o(.text) referenced from startup_da14531.o(RESET)
+ <LI><a href="#[51]">rwip_eif_get_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[5a]">smpc_check_param_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[7c]">smpc_dhkey_calc_ind_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[5b]">smpc_pdu_recv_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[7b]">smpc_public_key_exchange_start_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[7d]">smpm_ecdh_key_create_func_empty</a> from jump_table.o(.text) referenced from jump_table.o(.constdata)
+ <LI><a href="#[2d]">timer_canceled_handler</a> from app_easy_timer.o(.text) referenced from app_easy_timer.o(.text)
+ <LI><a href="#[2e]">timer_cb</a> from user_custs1_impl.o(.text) referenced from user_custs1_impl.o(.text)
+ <LI><a href="#[2c]">timer_modified_handler</a> from app_easy_timer.o(.text) referenced from app_easy_timer.o(.text)
+ <LI><a href="#[37]">uart_finish_transfers_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[36]">uart_flow_off_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[35]">uart_flow_on_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[34]">uart_init_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[38]">uart_read_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[39]">uart_write_func</a> from da14531_symbols.txt(ABSOLUTE) referenced from jump_table.o(.constdata)
+ <LI><a href="#[8b]">user_app_adv_start</a> from user_peripheral.o(.text) referenced from app_default_handlers.o(.constdata)
+ <LI><a href="#[8f]">user_app_adv_undirect_complete</a> from user_peripheral.o(.text) referenced 3 times from app.o(.constdata)
+ <LI><a href="#[8c]">user_app_connection</a> from user_peripheral.o(.text) referenced 3 times from app.o(.constdata)
+ <LI><a href="#[8d]">user_app_disconnect</a> from user_peripheral.o(.text) referenced 3 times from app.o(.constdata)
+ <LI><a href="#[31]">user_app_init</a> from user_peripheral.o(.text) referenced 2 times from arch_main.o(.constdata)
+ <LI><a href="#[2b]">user_catch_rest_hndl</a> from user_peripheral.o(.text) referenced from app_entry_point.o(.constdata)
+ <LI><a href="#[2b]">user_catch_rest_hndl</a> from user_peripheral.o(.text) referenced from app_task.o(.text)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[51]"></a>rwip_eif_get_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[e2]"></a>ble_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
+</UL>
+
+<P><STRONG><a name="[13e]"></a>ble_regs_push</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;patched_ble_regs_push
+</UL>
+
+<P><STRONG><a name="[13f]"></a>ble_regs_pop</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;patched_ble_regs_pop
+</UL>
+
+<P><STRONG><a name="[138]"></a>rf_reinit</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
+</UL>
+
+<P><STRONG><a name="[1a7]"></a>smpc_pdu_recv</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;JT_l2cc_pdu_recv_ind_handler_func
+</UL>
+
+<P><STRONG><a name="[8]"></a>UART_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[c3]"></a>dia_rand</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ba431_get_rand_func
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;default_app_generate_static_random_addr
+</UL>
+
+<P><STRONG><a name="[e1]"></a>dia_srand</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
+<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;feed_seed_to_rand
+</UL>
+
+<P><STRONG><a name="[73]"></a>llc_le_length_effective_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[74]"></a>llc_le_length_conn_init_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[77]"></a>llc_pdu_send_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[136]"></a>lld_crypt_isr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
+</UL>
+
+<P><STRONG><a name="[58]"></a>lld_test_mode_tx_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[57]"></a>lld_test_stop_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[76]"></a>lld_data_tx_check_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[75]"></a>lld_data_tx_prog_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[1a4]"></a>lld_evt_elt_insert</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;JT_lld_test_mode_rx_func
+</UL>
+
+<P><STRONG><a name="[1a2]"></a>lld_evt_adv_create</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;JT_lld_test_mode_rx_func
+</UL>
+
+<P><STRONG><a name="[135]"></a>lld_evt_timer_isr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
+</UL>
+
+<P><STRONG><a name="[132]"></a>lld_evt_end_isr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
+</UL>
+
+<P><STRONG><a name="[131]"></a>lld_evt_rx_isr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
+</UL>
+
+<P><STRONG><a name="[d1]"></a>lld_sleep_us_2_lpcycles_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_us_2_lpcycles_sel_func
+</UL>
+
+<P><STRONG><a name="[ce]"></a>lld_sleep_lpcycles_2_us_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_lpcycles_2_us_sel_func
+</UL>
+
+<P><STRONG><a name="[146]"></a>lld_sleep_enter</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+</UL>
+
+<P><STRONG><a name="[1a3]"></a>lld_util_freq2chnl</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;JT_lld_test_mode_rx_func
+</UL>
+
+<P><STRONG><a name="[6e]"></a>llm_le_adv_report_ind_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[4c]"></a>llm_encryption_done_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[70]"></a>llm_p256_start_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[71]"></a>llm_create_p256_key_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[72]"></a>llm_p256_req_handler_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[64]"></a>hci_rd_local_supp_feats_cmd_handler_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[6f]"></a>PK_PointMult_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[130]"></a>ea_finetimer_isr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
+</UL>
+
+<P><STRONG><a name="[134]"></a>ea_sw_isr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
+</UL>
+
+<P><STRONG><a name="[b6]"></a>ea_sleep_check</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;schedule_while_ble_on
+</UL>
+
+<P><STRONG><a name="[34]"></a>uart_init_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[35]"></a>uart_flow_on_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[36]"></a>uart_flow_off_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[37]"></a>uart_finish_transfers_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[38]"></a>uart_read_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[39]"></a>uart_write_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[3a]"></a>UART_Handler_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[3b]"></a>gtl_init_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[3d]"></a>gtl_eif_read_start_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[3e]"></a>gtl_eif_read_hdr_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[3f]"></a>gtl_eif_read_payl_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[40]"></a>gtl_eif_tx_done_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[41]"></a>gtl_eif_rx_done_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[3c]"></a>gtl_eif_init_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[43]"></a>h4tl_read_start_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[44]"></a>h4tl_read_hdr_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[45]"></a>h4tl_read_payl_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[46]"></a>h4tl_read_next_out_of_sync_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[47]"></a>h4tl_out_of_sync_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[48]"></a>h4tl_tx_done_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[49]"></a>h4tl_rx_done_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[42]"></a>h4tl_init_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[6c]"></a>attc_l2cc_pdu_recv_handler_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[163]"></a>attmdb_get_attribute</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_write_req_ind_handler
+</UL>
+
+<P><STRONG><a name="[164]"></a>attmdb_att_set_value</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_write_req_ind_handler
+</UL>
+
+<P><STRONG><a name="[160]"></a>attmdb_att_get_permission</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_write_req_ind_handler
+</UL>
+
+<P><STRONG><a name="[6b]"></a>atts_l2cc_pdu_recv_handler_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[5b]"></a>smpc_pdu_recv_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[1a5]"></a>gapc_lecnx_check_rx</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;JT_l2cc_pdu_unpack_func
+</UL>
+
+<P><STRONG><a name="[1a6]"></a>l2cc_pdu_recv_ind_handler_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;JT_l2cc_pdu_recv_ind_handler_func
+</UL>
+
+<P><STRONG><a name="[6a]"></a>gapc_lecb_connect_cfm_handler_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[65]"></a>l2cc_pdu_pack_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[68]"></a>l2c_process_sdu_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[67]"></a>l2c_send_lecb_message_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[5a]"></a>smpc_check_param_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[7b]"></a>smpc_public_key_exchange_start_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[7c]"></a>smpc_dhkey_calc_ind_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[143]"></a>ke_sleep_check</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+</UL>
+
+<P><STRONG><a name="[1ca]"></a>ke_event_flush</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR><BR>[Called By]<UL></UL>
+
+<P><STRONG><a name="[bd]"></a>ke_mem_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_resume_from_sleep
+</UL>
+
+<P><STRONG><a name="[c0]"></a>ke_mem_is_empty</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_turn_peripherals_off
+</UL>
+
+<P><STRONG><a name="[128]"></a>ke_malloc</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_rand_seed_from_trng
+</UL>
+
+<P><STRONG><a name="[12b]"></a>ke_free</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_rand_seed_from_trng
+</UL>
+
+<P><STRONG><a name="[166]"></a>ke_msg_alloc</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[18c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cancel_timer_handler
+<LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_timer
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;diss_value_req_ind_handler
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_get_dev_info_req_ind_handler
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapm_device_ready_ind_handler
+<LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_timer_cancel
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_diss_create_db
+<LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_dev_config_create_msg
+<LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_start_connection_to_msg_create
+<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_param_update_msg_create
+<LI><a href="#[176]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_directed_advertise_start_create_msg
+<LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_undirected_advertise_start_create_msg
+<LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_non_connectable_advertise_start_create_msg
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_write_req_ind_handler
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_custs1_create_db
+</UL>
+
+<P><STRONG><a name="[167]"></a>ke_msg_send</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[18c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cancel_timer_handler
+<LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_timer
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;diss_value_req_ind_handler
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_get_dev_info_req_ind_handler
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapm_device_ready_ind_handler
+<LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_timer_cancel
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_diss_create_db
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_dev_configure
+<LI><a href="#[182]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_param_update_start
+<LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_undirected_advertise_start
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_write_req_ind_handler
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_custs1_create_db
+</UL>
+
+<P><STRONG><a name="[1c2]"></a>ke_msg_send_basic</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR><BR>[Called By]<UL></UL>
+
+<P><STRONG><a name="[4a]"></a>ke_task_init_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[168]"></a>ke_task_create</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prf_init_func
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
+</UL>
+
+<P><STRONG><a name="[17e]"></a>ke_state_set</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_connection_req_ind_handler
+<LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_undirected_advertise_start
+</UL>
+
+<P><STRONG><a name="[183]"></a>ke_state_get</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;JT_l2cc_pdu_recv_ind_handler_func
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_disconnect_ind_handler
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_connection_req_ind_handler
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapm_device_ready_ind_handler
+</UL>
+
+<P><STRONG><a name="[16a]"></a>ke_task_msg_flush</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prf_init_func
+</UL>
+
+<P><STRONG><a name="[4b]"></a>ke_timer_init_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[189]"></a>ke_timer_set</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[18b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_timer_handler
+<LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_timer
+</UL>
+
+<P><STRONG><a name="[192]"></a>ke_timer_clear</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_timer_cancel
+</UL>
+
+<P><STRONG><a name="[144]"></a>ke_timer_sleep_check</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+</UL>
+
+<P><STRONG><a name="[b4]"></a>rwip_schedule</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;schedule_while_ble_on
+</UL>
+
+<P><STRONG><a name="[137]"></a>rwip_wakeup</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
+</UL>
+
+<P><STRONG><a name="[139]"></a>rwip_wakeup_end</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
+</UL>
+
+<P><STRONG><a name="[d4]"></a>rwip_wakeup_delay_set</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_sleep_delay
+</UL>
+
+<P><STRONG><a name="[d0]"></a>__aeabi_uidivmod</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_correction_apply
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_us_2_lpcycles_rcx_func
+<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_compensate_core
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_slot_2_lpcycles
+</UL>
+
+<P><STRONG><a name="[10d]"></a>__aeabi_idivmod</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_correction_apply
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_get_temp
+<LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_rssi_convert
+</UL>
+
+<P><STRONG><a name="[13c]"></a>__aeabi_lmul</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_slot_2_lpcycles_rcx
+</UL>
+
+<P><STRONG><a name="[c4]"></a>rand</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dia_rand_func
+</UL>
+
+<P><STRONG><a name="[c5]"></a>srand</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dia_srand_func
+</UL>
+
+<P><STRONG><a name="[e6]"></a>__aeabi_memcpy</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_init_func
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;JT_l2cc_pdu_unpack_func
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_init
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_hdr_get_bd_address
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_store
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_rom_init
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;diss_value_req_ind_handler
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_get_dev_info_req_ind_handler
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_connection_req_ind_handler
+<LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_dev_config_create_msg
+<LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_start_connection_to_msg_create
+<LI><a href="#[176]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_directed_advertise_start_create_msg
+<LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_undirected_advertise_start_create_msg
+<LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_non_connectable_advertise_start_create_msg
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;default_app_on_set_dev_info
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;default_app_on_get_dev_name
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_write_req_ind_handler
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adv_data_update_timer_cb
+<LI><a href="#[19c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_add_ad_struct
+<LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_svc1_led_wr_ind_handler
+<LI><a href="#[195]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_svc1_led_time_wr_ind_handler
+</UL>
+
+<P><STRONG><a name="[e9]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_init_arp_func
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_rom_init
+</UL>
+
+<P><STRONG><a name="[17a]"></a>__aeabi_memclr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_dev_config_create_msg
+</UL>
+
+<P><STRONG><a name="[e7]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_rom_init
+</UL>
+
+<P><STRONG><a name="[17b]"></a>memcmp</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_dev_config_create_msg
+</UL>
+
+<P><STRONG><a name="[f4]"></a>__aeabi_llsl</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ConfigurePin
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetActive
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetInactive
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetPinFunction
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_init
+</UL>
+
+<P><STRONG><a name="[ea]"></a>__ARM_common_switch8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_store
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hw_otpc_enter_mode
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;diss_value_req_ind_handler
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapm_cmp_evt_handler
+<LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_svc1_led_wr_ind_handler
+</UL>
+
+<P><STRONG><a name="[4d]"></a>nvds_get_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[50]"></a>nvds_init_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[4f]"></a>nvds_del_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[4e]"></a>nvds_put_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[12a]"></a>trng_acquire</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_rand_seed_from_trng
+</UL>
+
+<P><STRONG><a name="[5d]"></a>prf_add_profile_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[5f]"></a>prf_cleanup_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[15d]"></a>prf_env_get</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_write_req_ind_handler
+</UL>
+
+<P><STRONG><a name="[165]"></a>prf_dst_task_get</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_write_req_ind_handler
+</UL>
+
+<P><STRONG><a name="[60]"></a>prf_get_id_from_task_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[61]"></a>prf_get_task_from_id_func</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[169]"></a>prf_itf_get</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prf_init_func
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prf_create_func
+</UL>
+
+<P><STRONG><a name="[89]"></a>diss_prf_itf_get</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> prf.o(.constdata)
+</UL>
+<P><STRONG><a name="[161]"></a>check_client_char_cfg</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_write_req_ind_handler
+</UL>
+
+<P><STRONG><a name="[15f]"></a>get_value_handle</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_write_req_ind_handler
+</UL>
+
+<P><STRONG><a name="[15e]"></a>custs1_get_att_idx</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_write_req_ind_handler
+</UL>
+
+<P><STRONG><a name="[8a]"></a>custs1_prf_itf_get</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> prf.o(.constdata)
+</UL>
+<P><STRONG><a name="[162]"></a>custs1_set_ccc_value</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_write_req_ind_handler
+</UL>
+
+<P><STRONG><a name="[83]"></a>gattc_cmp_evt_handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> custs1_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[85]"></a>custs1_val_set_req_handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> custs1_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[84]"></a>custs1_val_ntf_req_handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> custs1_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[86]"></a>custs1_val_ind_req_handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> custs1_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[87]"></a>custs1_att_info_rsp_handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> custs1_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[80]"></a>gattc_read_req_ind_handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> custs1_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[82]"></a>gattc_att_info_req_ind_handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> custs1_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[88]"></a>custs1_value_req_rsp_handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> custs1_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[a0]"></a>gapm_adv_report_ind_handler_ROM</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[9e]"></a>gapc_set_dev_info_req_ind_handler_ROM</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[9f]"></a>gapm_profile_added_ind_handler_ROM</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[a1]"></a>gapc_param_update_req_ind_handler_ROM</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[a2]"></a>gapc_le_pkt_size_ind_handler_ROM</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[a3]"></a>gattc_svc_changed_cfg_ind_handler_ROM</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[a4]"></a>gapc_peer_features_ind_handler_ROM</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[185]"></a>app_std_process_event</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_custs1_process_handler
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_diss_process_handler
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_gap_process_handler
+</UL>
+
+<P><STRONG><a name="[c9]"></a>__aeabi_uldivmod</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_rcx_freq
+</UL>
+
+<P><STRONG><a name="[171]"></a>app_db_init_start</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;default_app_on_set_dev_config_complete
+</UL>
+
+<P><STRONG><a name="[184]"></a>app_easy_gap_confirm</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_connection_req_ind_handler
+</UL>
+
+<P><STRONG><a name="[174]"></a>append_device_name</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_undirected_advertise_start_create_msg
+<LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_non_connectable_advertise_start_create_msg
+</UL>
+
+<P><STRONG><a name="[19e]"></a>app_easy_gap_update_adv_data</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adv_data_update_timer_cb
+</UL>
+
+<P><STRONG><a name="[17d]"></a>app_easy_gap_advertise_stop</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_advertise_stop_handler
+</UL>
+
+<P><STRONG><a name="[186]"></a>get_user_prf_srv_perm</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_diss_create_db
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_custs1_create_db
+</UL>
+
+<P><STRONG><a name="[16d]"></a>prf_init_srv_perm</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, da14531_symbols.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;default_app_on_init
+</UL>
+
+<P><STRONG><a name="[20]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(.text)
+</UL>
+<P><STRONG><a name="[1ed]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[ad]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[1a8]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[1ee]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+
+<P><STRONG><a name="[1ef]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+
+<P><STRONG><a name="[1f0]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+
+<P><STRONG><a name="[1f1]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+
+<P><STRONG><a name="[1f2]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+
+<P><STRONG><a name="[1f]"></a>SystemInit</STRONG> (Thumb, 138 bytes, Stack size 8 bytes, system_da14531.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SystemInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_DisableIRQ
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(.text)
+</UL>
+<P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_da14531.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[3]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_da14531.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[4]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_da14531.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[5]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_da14531.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[e]"></a>BLE_RF_DIAG_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_da14531.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BLE_RF_DIAG_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BLE_RF_DIAG_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[19]"></a>DMA_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_da14531.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[d]"></a>KEYBRD_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_da14531.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[1b]"></a>RESERVED21_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_da14531.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[1c]"></a>RESERVED22_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_da14531.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[1d]"></a>RESERVED23_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_da14531.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[f]"></a>RFCAL_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_da14531.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[18]"></a>RTC_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_da14531.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[b]"></a>SPI_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_da14531.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[17]"></a>SWTIM1_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_da14531.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[15]"></a>SWTIM_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_da14531.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[1a]"></a>XTAL32M_RDY_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_da14531.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[22]"></a>HardFault_HandlerC</STRONG> (Thumb, 186 bytes, Stack size 8 bytes, hardfault_handler.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = HardFault_HandlerC
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;syscntl_dcdc_set_level
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(.text)
+</UL>
+<P><STRONG><a name="[21]"></a>NMI_HandlerC</STRONG> (Thumb, 266 bytes, Stack size 8 bytes, nmi_handler.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = NMI_HandlerC
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;syscntl_dcdc_set_level
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(.text)
+</UL>
+<P><STRONG><a name="[1e]"></a>main</STRONG> (Thumb, 194 bytes, Stack size 0 bytes, arch_main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = main &rArr; system_init &rArr; periph_init &rArr; set_pad_functions &rArr; GPIO_ConfigurePin &rArr; GPIO_SetPinFunction
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_retention_mode
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_resume_from_sleep
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;schedule_while_ble_on
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_goto_sleep
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
+</UL>
+<P><STRONG><a name="[6d]"></a>crypto_init_func</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, jump_table.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[7a]"></a>ba431_get_rand_func</STRONG> (Thumb, 34 bytes, Stack size 24 bytes, jump_table.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ba431_get_rand_func
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dia_rand
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[78]"></a>dia_rand_func</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, jump_table.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = dia_rand_func
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rand
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[79]"></a>dia_srand_func</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, jump_table.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = dia_srand_func
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;srand
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[62]"></a>dbg_init_func_empty</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, jump_table.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[63]"></a>dbg_platform_reset_complete_func_empty</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, jump_table.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[7d]"></a>smpm_ecdh_key_create_func_empty</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, jump_table.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[52]"></a>platform_reset_func</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, jump_table.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[c7]"></a>arch_disable_sleep</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, arch_sleep.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_set_sleep_mode
+</UL>
+
+<P><STRONG><a name="[c8]"></a>arch_set_extended_sleep</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, arch_sleep.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_set_sleep_mode
+</UL>
+
+<P><STRONG><a name="[c6]"></a>arch_set_sleep_mode</STRONG> (Thumb, 46 bytes, Stack size 4 bytes, arch_sleep.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = arch_set_sleep_mode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_set_extended_sleep
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_disable_sleep
+</UL>
+<BR>[Called By]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;default_app_on_init
+</UL>
+
+<P><STRONG><a name="[bc]"></a>arch_get_sleep_mode</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, arch_sleep.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_resume_from_sleep
+</UL>
+
+<P><STRONG><a name="[141]"></a>arch_ble_ext_wakeup_get</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, arch_sleep.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+</UL>
+
+<P><STRONG><a name="[18a]"></a>arch_ble_force_wakeup</STRONG> (Thumb, 82 bytes, Stack size 0 bytes, arch_sleep.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_timer
+</UL>
+
+<P><STRONG><a name="[b5]"></a>read_rcx_freq</STRONG> (Thumb, 120 bytes, Stack size 24 bytes, arch_system.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = read_rcx_freq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;schedule_while_ble_on
+</UL>
+
+<P><STRONG><a name="[e4]"></a>calibrate_rcx20</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, arch_system.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
+<LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
+</UL>
+
+<P><STRONG><a name="[ca]"></a>init_pwr_and_clk_ble</STRONG> (Thumb, 376 bytes, Stack size 8 bytes, arch_system.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = init_pwr_and_clk_ble
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;select_lp_clk
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
+</UL>
+
+<P><STRONG><a name="[cc]"></a>lld_sleep_lpcycles_2_us_rcx_func</STRONG> (Thumb, 50 bytes, Stack size 24 bytes, arch_system.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = lld_sleep_lpcycles_2_us_rcx_func &rArr; __ARM_common_ll_muluu
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_ll_muluu
+</UL>
+<BR>[Called By]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_lpcycles_2_us_sel_func
+</UL>
+
+<P><STRONG><a name="[56]"></a>lld_sleep_lpcycles_2_us_sel_func</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, arch_system.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = lld_sleep_lpcycles_2_us_sel_func &rArr; lld_sleep_lpcycles_2_us_rcx_func &rArr; __ARM_common_ll_muluu
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_lpcycles_2_us_func
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_lpcycles_2_us_rcx_func
+</UL>
+<BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_compensate_func
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_sleep_delay
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[cf]"></a>lld_sleep_us_2_lpcycles_rcx_func</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, arch_system.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = lld_sleep_us_2_lpcycles_rcx_func
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_us_2_lpcycles_sel_func
+</UL>
+
+<P><STRONG><a name="[55]"></a>lld_sleep_us_2_lpcycles_sel_func</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, arch_system.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = lld_sleep_us_2_lpcycles_sel_func &rArr; lld_sleep_us_2_lpcycles_rcx_func
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_us_2_lpcycles_func
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_us_2_lpcycles_rcx_func
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_sleep_delay
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[d2]"></a>set_sleep_delay</STRONG> (Thumb, 200 bytes, Stack size 16 bytes, arch_system.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = set_sleep_delay &rArr; lld_sleep_lpcycles_2_us_sel_func &rArr; lld_sleep_lpcycles_2_us_rcx_func &rArr; __ARM_common_ll_muluu
+</UL>
+<BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_us_2_lpcycles_sel_func
+<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_lpcycles_2_us_sel_func
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup_delay_set
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_get_xtal_wait_trim
+</UL>
+<BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_init_func
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+</UL>
+
+<P><STRONG><a name="[b7]"></a>conditionally_run_radio_cals</STRONG> (Thumb, 266 bytes, Stack size 40 bytes, arch_system.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = conditionally_run_radio_cals &rArr; rf_recalibration &rArr; rf_calibration &rArr; kdtc_calibration &rArr; dis_hclk
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_recalibration
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_init
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_get_temp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;schedule_while_ble_on
+</UL>
+
+<P><STRONG><a name="[142]"></a>check_sys_startup_period</STRONG> (Thumb, 68 bytes, Stack size 0 bytes, arch_system.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+</UL>
+
+<P><STRONG><a name="[147]"></a>app_use_lower_clocks_check</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, arch_system.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+</UL>
+
+<P><STRONG><a name="[54]"></a>lld_sleep_init_func</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, arch_system.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = lld_sleep_init_func &rArr; set_sleep_delay &rArr; lld_sleep_lpcycles_2_us_sel_func &rArr; lld_sleep_lpcycles_2_us_rcx_func &rArr; __ARM_common_ll_muluu
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_sleep_delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[de]"></a>set_xtal32m_trim_value</STRONG> (Thumb, 132 bytes, Stack size 8 bytes, arch_system.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = set_xtal32m_trim_value
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
+</UL>
+
+<P><STRONG><a name="[b9]"></a>system_init</STRONG> (Thumb, 922 bytes, Stack size 16 bytes, arch_system.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = system_init &rArr; periph_init &rArr; set_pad_functions &rArr; GPIO_ConfigurePin &rArr; GPIO_SetPinFunction
+</UL>
+<BR>[Calls]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_init_func
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_rcx_freq
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph_init
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hw_otpc_init
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_indication (Weak Reference)
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_hdr_get_bd_address
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_store
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_get_xtal32m_trim_value
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_rand_seed_from_trng
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hw_otpc_enter_mode
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hw_otpc_disable
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dia_srand
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_init
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_rom_init
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_init
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_xtal32m_trim_value
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_pwr_and_clk_ble
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;calibrate_rcx20
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_disable_sleep
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[e0]"></a>arch_rom_init</STRONG> (Thumb, 362 bytes, Stack size 88 bytes, arch_rom.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = arch_rom_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;patch_global_vars_init
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
+</UL>
+
+<P><STRONG><a name="[dc]"></a>otp_cs_store</STRONG> (Thumb, 800 bytes, Stack size 48 bytes, otp_cs.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = otp_cs_store
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;calc_adc_offset
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;calc_adc_ge
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
+</UL>
+
+<P><STRONG><a name="[ed]"></a>otp_cs_load_pd_rad</STRONG> (Thumb, 136 bytes, Stack size 8 bytes, otp_cs.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = otp_cs_load_pd_rad
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_pa_pwr_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_reinit_func
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_init_func
+</UL>
+
+<P><STRONG><a name="[ef]"></a>otp_cs_load_pd_adpll</STRONG> (Thumb, 140 bytes, Stack size 8 bytes, otp_cs.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = otp_cs_load_pd_adpll
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_pa_pwr_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_reinit_func
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_init_func
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_recalibration
+</UL>
+
+<P><STRONG><a name="[103]"></a>otp_cs_get_adc_trim_val</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, otp_cs.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_init
+</UL>
+
+<P><STRONG><a name="[100]"></a>otp_cs_get_adc_25_cal</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, otp_cs.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_configure
+</UL>
+
+<P><STRONG><a name="[dd]"></a>otp_cs_get_xtal32m_trim_value</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, otp_cs.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
+</UL>
+
+<P><STRONG><a name="[d3]"></a>otp_cs_get_xtal_wait_trim</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, otp_cs.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_sleep_delay
+</UL>
+
+<P><STRONG><a name="[109]"></a>otp_cs_get_adc_single_ge</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, otp_cs.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_correction_apply
+</UL>
+
+<P><STRONG><a name="[10a]"></a>otp_cs_get_adc_single_offset</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, otp_cs.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_correction_apply
+</UL>
+
+<P><STRONG><a name="[10b]"></a>otp_cs_get_adc_diff_ge</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, otp_cs.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_correction_apply
+</UL>
+
+<P><STRONG><a name="[10c]"></a>otp_cs_get_adc_diff_offset</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, otp_cs.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_correction_apply
+</UL>
+
+<P><STRONG><a name="[107]"></a>otp_cs_get_adc_offsh_ge</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, otp_cs.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_correction_apply
+</UL>
+
+<P><STRONG><a name="[108]"></a>otp_cs_get_adc_offsh_offset</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, otp_cs.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_correction_apply
+</UL>
+
+<P><STRONG><a name="[db]"></a>otp_hdr_get_bd_address</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, otp_hdr.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = otp_hdr_get_bd_address
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
+</UL>
+
+<P><STRONG><a name="[12f]"></a>syscntl_use_lowest_amba_clocks</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, syscntl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BLE_WAKEUP_LP_Handler
+</UL>
+
+<P><STRONG><a name="[fc]"></a>syscntl_use_highest_amba_clocks</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, syscntl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+<LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WKUP_QUADEC_Handler
+<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BLE_WAKEUP_LP_Handler
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;power_up
+</UL>
+
+<P><STRONG><a name="[145]"></a>syscntl_cfg_xtal32m_amp_reg</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, syscntl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_regs
+</UL>
+
+<P><STRONG><a name="[f1]"></a>syscntl_dcdc_get_level</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, syscntl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hw_otpc_init
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;syscntl_dcdc_turn_on_in_boost
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dcdc_cfg
+</UL>
+
+<P><STRONG><a name="[b0]"></a>syscntl_dcdc_set_level</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, syscntl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_prepare
+<LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_HandlerC
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_HandlerC
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hw_otpc_disable
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dcdc_cfg
+</UL>
+
+<P><STRONG><a name="[f0]"></a>syscntl_dcdc_turn_on_in_boost</STRONG> (Thumb, 106 bytes, Stack size 8 bytes, syscntl.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = syscntl_dcdc_turn_on_in_boost
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;syscntl_dcdc_get_level
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dcdc_cfg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph_init
+</UL>
+
+<P><STRONG><a name="[d8]"></a>GPIO_init</STRONG> (Thumb, 280 bytes, Stack size 32 bytes, gpio.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = GPIO_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_reservations
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
+</UL>
+
+<P><STRONG><a name="[f5]"></a>GPIO_SetPinFunction</STRONG> (Thumb, 86 bytes, Stack size 56 bytes, gpio.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = GPIO_SetPinFunction
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ConfigurePin
+</UL>
+
+<P><STRONG><a name="[f6]"></a>GPIO_SetInactive</STRONG> (Thumb, 82 bytes, Stack size 40 bytes, gpio.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = GPIO_SetInactive
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ConfigurePin
+</UL>
+
+<P><STRONG><a name="[f7]"></a>GPIO_SetActive</STRONG> (Thumb, 82 bytes, Stack size 40 bytes, gpio.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = GPIO_SetActive
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ConfigurePin
+</UL>
+
+<P><STRONG><a name="[f8]"></a>GPIO_ConfigurePin</STRONG> (Thumb, 94 bytes, Stack size 48 bytes, gpio.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = GPIO_ConfigurePin &rArr; GPIO_SetPinFunction
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetActive
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetInactive
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetPinFunction
+</UL>
+<BR>[Called By]<UL><LI><a href="#[193]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_pad_functions
+</UL>
+
+<P><STRONG><a name="[f9]"></a>GPIO_ResetIRQ</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, gpio.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GPIO_ResetIRQ
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpioshift16
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOn_Handler
+</UL>
+
+<P><STRONG><a name="[fb]"></a>GPIOn_Handler</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, gpio.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = GPIOn_Handler &rArr; GPIO_ResetIRQ
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetIRQ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO4_Handler
+<LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO3_Handler
+<LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO2_Handler
+<LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO1_Handler
+<LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO0_Handler
+</UL>
+
+<P><STRONG><a name="[10]"></a>GPIO0_Handler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, gpio.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = GPIO0_Handler &rArr; GPIOn_Handler &rArr; GPIO_ResetIRQ
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOn_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[11]"></a>GPIO1_Handler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, gpio.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = GPIO1_Handler &rArr; GPIOn_Handler &rArr; GPIO_ResetIRQ
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOn_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[12]"></a>GPIO2_Handler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, gpio.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = GPIO2_Handler &rArr; GPIOn_Handler &rArr; GPIO_ResetIRQ
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOn_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[13]"></a>GPIO3_Handler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, gpio.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = GPIO3_Handler &rArr; GPIOn_Handler &rArr; GPIO_ResetIRQ
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOn_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[14]"></a>GPIO4_Handler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, gpio.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = GPIO4_Handler &rArr; GPIOn_Handler &rArr; GPIO_ResetIRQ
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOn_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[16]"></a>WKUP_QUADEC_Handler</STRONG> (Thumb, 268 bytes, Stack size 16 bytes, wkupct_quadec.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = WKUP_QUADEC_Handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;syscntl_use_highest_amba_clocks
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[102]"></a>adc_temp_sensor_disable</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, adc_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_configure
+</UL>
+
+<P><STRONG><a name="[101]"></a>adc_temp_sensor_enable</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, adc_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_configure
+</UL>
+
+<P><STRONG><a name="[ff]"></a>adc_set_diff_input</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, adc_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_configure
+</UL>
+
+<P><STRONG><a name="[fe]"></a>adc_set_se_input</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, adc_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_configure
+</UL>
+
+<P><STRONG><a name="[105]"></a>adc_enable</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, adc_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_init
+</UL>
+
+<P><STRONG><a name="[d5]"></a>adc_init</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, adc_531.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = adc_init &rArr; adc_configure
+</UL>
+<BR>[Calls]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_enable
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_configure
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_DisableIRQ
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_get_adc_trim_val
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;conditionally_run_radio_cals
+</UL>
+
+<P><STRONG><a name="[10e]"></a>adc_start</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, adc_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_get_temp
+</UL>
+
+<P><STRONG><a name="[c]"></a>ADC_Handler</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, adc_531.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ADC_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[d6]"></a>adc_get_temp</STRONG> (Thumb, 96 bytes, Stack size 24 bytes, adc_531.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = adc_get_temp
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_start
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;conditionally_run_radio_cals
+</UL>
+
+<P><STRONG><a name="[111]"></a>i2c_setup_slave</STRONG> (Thumb, 94 bytes, Stack size 8 bytes, i2c.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = i2c_setup_slave
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_init
+</UL>
+
+<P><STRONG><a name="[110]"></a>i2c_setup_master</STRONG> (Thumb, 124 bytes, Stack size 12 bytes, i2c.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = i2c_setup_master
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_init
+</UL>
+
+<P><STRONG><a name="[10f]"></a>i2c_init</STRONG> (Thumb, 334 bytes, Stack size 8 bytes, i2c.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = i2c_init &rArr; i2c_setup_master
+</UL>
+<BR>[Calls]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_setup_master
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_setup_slave
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph_init
+</UL>
+
+<P><STRONG><a name="[1a1]"></a>i2c_master_transmit_buffer_sync</STRONG> (Thumb, 176 bytes, Stack size 24 bytes, i2c.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = i2c_master_transmit_buffer_sync
+</UL>
+<BR>[Called By]<UL><LI><a href="#[198]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_ioExpander_RedHigh
+<LI><a href="#[199]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_ioExpander_GreenHigh
+<LI><a href="#[19a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_ioExpander_BlueHigh
+<LI><a href="#[196]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_ioExpander_AllLow
+<LI><a href="#[19b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_ioExpander_AllHigh
+</UL>
+
+<P><STRONG><a name="[a]"></a>I2C_Handler</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, i2c.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = I2C_Handler &rArr; intr_handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;intr_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[11c]"></a>i2c_register_int</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, i2c.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_unregister_int
+</UL>
+
+<P><STRONG><a name="[114]"></a>i2c_unregister_int</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, i2c.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_register_int
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_ClearPendingIRQ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rx_reply
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tx_reply
+</UL>
+
+<P><STRONG><a name="[da]"></a>hw_otpc_enter_mode</STRONG> (Thumb, 120 bytes, Stack size 16 bytes, hw_otpc_531.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = hw_otpc_enter_mode &rArr; dcdc_cfg
+</UL>
+<BR>[Calls]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dcdc_cfg
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hw_otpc_read_verif
+</UL>
+
+<P><STRONG><a name="[c2]"></a>hw_otpc_clear_dcdc_reserved</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, hw_otpc_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_prepare
+</UL>
+
+<P><STRONG><a name="[11f]"></a>hw_otpc_set_speed</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, hw_otpc_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hw_otpc_init
+</UL>
+
+<P><STRONG><a name="[c1]"></a>hw_otpc_init</STRONG> (Thumb, 140 bytes, Stack size 8 bytes, hw_otpc_531.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = hw_otpc_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;syscntl_dcdc_get_level
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hw_otpc_set_speed
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_PRIMASK
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_prepare
+</UL>
+
+<P><STRONG><a name="[df]"></a>hw_otpc_disable</STRONG> (Thumb, 170 bytes, Stack size 8 bytes, hw_otpc_531.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = hw_otpc_disable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;syscntl_dcdc_set_level
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_PRIMASK
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
+</UL>
+
+<P><STRONG><a name="[9]"></a>UART2_Handler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, uart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = UART2_Handler &rArr; uart_intr_hndl &rArr; uart_rx_timeout_isr &rArr; uart_rx_isr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_intr_hndl
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[e3]"></a>init_rand_seed_from_trng</STRONG> (Thumb, 114 bytes, Stack size 16 bytes, trng.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = init_rand_seed_from_trng &rArr; feed_seed_to_rand
+</UL>
+<BR>[Calls]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;trng_acquire
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_malloc
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_free
+<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;feed_seed_to_rand
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_extra_samples
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
+</UL>
+
+<P><STRONG><a name="[53]"></a>lld_sleep_compensate_func</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, rwble.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = lld_sleep_compensate_func &rArr; lld_sleep_lpcycles_2_us_sel_func &rArr; lld_sleep_lpcycles_2_us_rcx_func &rArr; __ARM_common_ll_muluu
+</UL>
+<BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_lpcycles_2_us_sel_func
+<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_compensate_core
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[12d]"></a>power_up</STRONG> (Thumb, 130 bytes, Stack size 8 bytes, rwble.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = power_up &rArr; patched_ble_regs_pop
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;syscntl_use_highest_amba_clocks
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;patched_ble_regs_pop
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BLE_WAKEUP_LP_Handler
+</UL>
+
+<P><STRONG><a name="[6]"></a>BLE_WAKEUP_LP_Handler</STRONG> (Thumb, 118 bytes, Stack size 8 bytes, rwble.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = BLE_WAKEUP_LP_Handler &rArr; power_up &rArr; patched_ble_regs_pop
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;syscntl_use_highest_amba_clocks
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;syscntl_use_lowest_amba_clocks
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;power_up
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[7]"></a>rwble_isr</STRONG> (Thumb, 444 bytes, Stack size 8 bytes, rwble.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = rwble_isr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_reinit
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;calibrate_rcx20
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup_end
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_wakeup
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_adplldig_deactivate
+<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_evt_timer_isr
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_evt_rx_isr
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_evt_end_isr
+<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_crypt_isr
+<LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ea_sw_isr
+<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ea_finetimer_isr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[13d]"></a>patched_ble_regs_push</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, rwip.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = patched_ble_regs_push
+</UL>
+<BR>[Calls]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_regs_push
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+</UL>
+
+<P><STRONG><a name="[12e]"></a>patched_ble_regs_pop</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, rwip.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = patched_ble_regs_pop
+</UL>
+<BR>[Calls]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_regs_pop
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;power_up
+</UL>
+
+<P><STRONG><a name="[ba]"></a>rwip_sleep</STRONG> (Thumb, 654 bytes, Stack size 16 bytes, rwip.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = rwip_sleep &rArr; set_sleep_delay &rArr; lld_sleep_lpcycles_2_us_sel_func &rArr; lld_sleep_lpcycles_2_us_rcx_func &rArr; __ARM_common_ll_muluu
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ea_sleep_check
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;syscntl_cfg_xtal32m_amp_reg
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;syscntl_use_highest_amba_clocks
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;syscntl_use_lowest_amba_clocks
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;patched_ble_regs_push
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_use_lower_clocks_check
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_sys_startup_period
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_sleep_delay
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_ble_ext_wakeup_get
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_enter
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_timer_sleep_check
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_sleep_check
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_max_sleep_duration
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_slot_2_lpcycles_rcx
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_slot_2_lpcycles
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[23]"></a>rf_reg_rd</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, ble_arp.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> ble_arp.o(.text)
+</UL>
+<P><STRONG><a name="[24]"></a>rf_reg_wr</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, ble_arp.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> ble_arp.o(.text)
+</UL>
+<P><STRONG><a name="[32]"></a>rf_init_func</STRONG> (Thumb, 184 bytes, Stack size 64 bytes, ble_arp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = rf_init_func &rArr; rf_calibration &rArr; kdtc_calibration &rArr; dis_hclk
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_load_pd_adpll
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_load_pd_rad
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_adplldig_deactivate
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_recommended_settings
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_power_up
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_pa_pwr_set
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_nfm_is_enabled
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_calibration
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_adplldig_activate
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_update_arp
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_regs
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_radiopwrupdn_pref_setting
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[33]"></a>rf_reinit_func</STRONG> (Thumb, 152 bytes, Stack size 8 bytes, ble_arp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = rf_reinit_func &rArr; otp_cs_load_pd_adpll
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_load_pd_adpll
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_load_pd_rad
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_adplldig_deactivate
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_recommended_settings
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_pa_pwr_set
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_nfm_is_enabled
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_adplldig_activate
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_update_arp_adpll_div_val
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_regs
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_radiopwrupdn_pref_setting
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[7e]"></a>ble_init_arp_func</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, ble_arp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ble_init_arp_func
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[d7]"></a>rf_recalibration</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, ble_arp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = rf_recalibration &rArr; rf_calibration &rArr; kdtc_calibration &rArr; dis_hclk
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_load_pd_adpll
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_adplldig_deactivate
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_recommended_settings
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_calibration
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_adplldig_activate
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_update_arp_adpll_calib_vals
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_radiopwrupdn_pref_setting
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;conditionally_run_radio_cals
+</UL>
+
+<P><STRONG><a name="[150]"></a>set_recommended_settings</STRONG> (Thumb, 546 bytes, Stack size 0 bytes, rf_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_reinit_func
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_init_func
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_recalibration
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_connection
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_adv_start
+</UL>
+
+<P><STRONG><a name="[159]"></a>dis_adpll</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, rf_531.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = dis_adpll
+</UL>
+<BR>[Called By]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kdtc_calibration
+</UL>
+
+<P><STRONG><a name="[15c]"></a>kdtc_cal_end</STRONG> (Thumb, 90 bytes, Stack size 0 bytes, rf_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kdtc_calibration
+</UL>
+
+<P><STRONG><a name="[15b]"></a>dis_kdtc_cal</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, rf_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kdtc_calibration
+</UL>
+
+<P><STRONG><a name="[154]"></a>en_hclk</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rf_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kdtc_calibration
+</UL>
+
+<P><STRONG><a name="[158]"></a>en_adpll_tx</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, rf_531.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = en_adpll_tx
+</UL>
+<BR>[Called By]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kdtc_calibration
+</UL>
+
+<P><STRONG><a name="[157]"></a>dis_hclk</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, rf_531.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = dis_hclk
+</UL>
+<BR>[Called By]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kdtc_calibration
+</UL>
+
+<P><STRONG><a name="[15a]"></a>en_kdtc_cal_mod0</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, rf_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kdtc_calibration
+</UL>
+
+<P><STRONG><a name="[156]"></a>en_kdtc_cal_mod1</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rf_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kdtc_calibration
+</UL>
+
+<P><STRONG><a name="[155]"></a>kdtc_cal_init</STRONG> (Thumb, 246 bytes, Stack size 0 bytes, rf_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kdtc_calibration
+</UL>
+
+<P><STRONG><a name="[153]"></a>kdtc_calibration</STRONG> (Thumb, 376 bytes, Stack size 12 bytes, rf_531.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = kdtc_calibration &rArr; dis_hclk
+</UL>
+<BR>[Calls]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kdtc_cal_init
+<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;en_kdtc_cal_mod1
+<LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;en_kdtc_cal_mod0
+<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dis_hclk
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;en_adpll_tx
+<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;en_hclk
+<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dis_kdtc_cal
+<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kdtc_cal_end
+<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dis_adpll
+</UL>
+<BR>[Called By]<UL><LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_calibration
+</UL>
+
+<P><STRONG><a name="[152]"></a>rf_calibration</STRONG> (Thumb, 8 bytes, Stack size 4 bytes, rf_531.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = rf_calibration &rArr; kdtc_calibration &rArr; dis_hclk
+</UL>
+<BR>[Calls]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kdtc_calibration
+</UL>
+<BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_init_func
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_recalibration
+</UL>
+
+<P><STRONG><a name="[14c]"></a>rf_power_up</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, rf_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_init_func
+</UL>
+
+<P><STRONG><a name="[14f]"></a>rf_adplldig_activate</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, rf_531.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = rf_adplldig_activate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_reinit_func
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_init_func
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_recalibration
+</UL>
+
+<P><STRONG><a name="[133]"></a>rf_adplldig_deactivate</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, rf_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_reinit_func
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_init_func
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_recalibration
+<LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwble_isr
+</UL>
+
+<P><STRONG><a name="[14d]"></a>rf_pa_pwr_set</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, rf_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_reinit_func
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_init_func
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_connection
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_adv_start
+</UL>
+
+<P><STRONG><a name="[ee]"></a>rf_pa_pwr_get</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, rf_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_load_pd_adpll
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_load_pd_rad
+<LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_txpwr_dbm_get
+</UL>
+
+<P><STRONG><a name="[14e]"></a>rf_nfm_is_enabled</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, rf_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_reinit_func
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_init_func
+</UL>
+
+<P><STRONG><a name="[5c]"></a>prf_init_func</STRONG> (Thumb, 114 bytes, Stack size 24 bytes, prf.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = prf_init_func
+</UL>
+<BR>[Calls]<UL><LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prf_itf_get
+<LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_task_msg_flush
+<LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_task_create
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[5e]"></a>prf_create_func</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, prf.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = prf_create_func
+</UL>
+<BR>[Calls]<UL><LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prf_itf_get
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[16b]"></a>default_app_on_init</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, app_default_handlers.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = default_app_on_init &rArr; arch_set_sleep_mode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_set_sleep_mode
+<LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prf_init_srv_perm
+<LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_dis_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_init
+</UL>
+
+<P><STRONG><a name="[16e]"></a>default_app_on_connection</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, app_default_handlers.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = default_app_on_connection &rArr; app_easy_gap_advertise_with_timeout_stop &rArr; app_easy_timer_cancel
+</UL>
+<BR>[Calls]<UL><LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_prf_enable
+<LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_advertise_with_timeout_stop
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_connection
+</UL>
+
+<P><STRONG><a name="[8e]"></a>default_app_on_set_dev_config_complete</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, app_default_handlers.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = default_app_on_set_dev_config_complete
+</UL>
+<BR>[Calls]<UL><LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_db_init_start
+</UL>
+<BR>[Address Reference Count : 3]<UL><LI> app.o(.constdata)
+<LI> app_task.o(.constdata)
+<LI> app_entry_point.o(.constdata)
+</UL>
+<P><STRONG><a name="[90]"></a>default_app_on_db_init_complete</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, app_default_handlers.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = default_app_on_db_init_complete
+</UL>
+<BR>[Address Reference Count : 3]<UL><LI> app.o(.constdata)
+<LI> app_task.o(.constdata)
+<LI> app_entry_point.o(.constdata)
+</UL>
+<P><STRONG><a name="[91]"></a>default_app_on_get_dev_name</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, app_default_handlers.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = default_app_on_get_dev_name
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Address Reference Count : 3]<UL><LI> app.o(.constdata)
+<LI> app_task.o(.constdata)
+<LI> app_entry_point.o(.constdata)
+</UL>
+<P><STRONG><a name="[92]"></a>default_app_on_get_dev_appearance</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, app_default_handlers.o(.text))
+<BR>[Address Reference Count : 3]<UL><LI> app.o(.constdata)
+<LI> app_task.o(.constdata)
+<LI> app_entry_point.o(.constdata)
+</UL>
+<P><STRONG><a name="[93]"></a>default_app_on_get_dev_slv_pref_params</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, app_default_handlers.o(.text))
+<BR>[Address Reference Count : 3]<UL><LI> app.o(.constdata)
+<LI> app_task.o(.constdata)
+<LI> app_entry_point.o(.constdata)
+</UL>
+<P><STRONG><a name="[94]"></a>default_app_on_set_dev_info</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, app_default_handlers.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = default_app_on_set_dev_info
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Address Reference Count : 3]<UL><LI> app.o(.constdata)
+<LI> app_task.o(.constdata)
+<LI> app_entry_point.o(.constdata)
+</UL>
+<P><STRONG><a name="[95]"></a>default_app_update_params_request</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, app_default_handlers.o(.text))
+<BR>[Address Reference Count : 3]<UL><LI> app.o(.constdata)
+<LI> app_task.o(.constdata)
+<LI> app_entry_point.o(.constdata)
+</UL>
+<P><STRONG><a name="[96]"></a>default_app_generate_static_random_addr</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, app_default_handlers.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = default_app_generate_static_random_addr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dia_rand
+</UL>
+<BR>[Address Reference Count : 3]<UL><LI> app.o(.constdata)
+<LI> app_task.o(.constdata)
+<LI> app_entry_point.o(.constdata)
+</UL>
+<P><STRONG><a name="[ab]"></a>app_db_init_next</STRONG> (Thumb, 268 bytes, Stack size 8 bytes, app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = app_db_init_next
+</UL>
+<BR>[Calls]<UL><LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_task_in_user_app
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> app_entry_point.o(.constdata)
+</UL>
+<P><STRONG><a name="[170]"></a>app_prf_enable</STRONG> (Thumb, 190 bytes, Stack size 16 bytes, app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = app_prf_enable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_task_in_user_app
+</UL>
+<BR>[Called By]<UL><LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;default_app_on_connection
+</UL>
+
+<P><STRONG><a name="[e5]"></a>app_init</STRONG> (Thumb, 88 bytes, Stack size 24 bytes, app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = app_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_state_set
+<LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_task_create
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
+</UL>
+
+<P><STRONG><a name="[17f]"></a>app_easy_gap_undirected_advertise_get_active</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = app_easy_gap_undirected_advertise_get_active &rArr; app_easy_gap_undirected_advertise_start_create_msg
+</UL>
+<BR>[Calls]<UL><LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_undirected_advertise_start_create_msg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_adv_start
+</UL>
+
+<P><STRONG><a name="[180]"></a>app_easy_gap_undirected_advertise_start</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = app_easy_gap_undirected_advertise_start &rArr; app_easy_gap_undirected_advertise_start_create_msg
+</UL>
+<BR>[Calls]<UL><LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_state_set
+<LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_undirected_advertise_start_create_msg
+<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_adv_start
+</UL>
+
+<P><STRONG><a name="[16f]"></a>app_easy_gap_advertise_with_timeout_stop</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = app_easy_gap_advertise_with_timeout_stop &rArr; app_easy_timer_cancel
+</UL>
+<BR>[Calls]<UL><LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_timer_cancel
+</UL>
+<BR>[Called By]<UL><LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;default_app_on_connection
+</UL>
+
+<P><STRONG><a name="[182]"></a>app_easy_gap_param_update_start</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = app_easy_gap_param_update_start &rArr; app_easy_gap_param_update_msg_create
+</UL>
+<BR>[Calls]<UL><LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_param_update_msg_create
+<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
+</UL>
+<BR>[Called By]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;param_update_request_timer_cb
+</UL>
+
+<P><STRONG><a name="[aa]"></a>app_easy_gap_dev_configure</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = app_easy_gap_dev_configure &rArr; app_easy_gap_dev_config_create_msg
+</UL>
+<BR>[Calls]<UL><LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_dev_config_create_msg
+<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapm_cmp_evt_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> app_entry_point.o(.constdata)
+</UL>
+<P><STRONG><a name="[a6]"></a>app_gap_process_handler</STRONG> (Thumb, 38 bytes, Stack size 48 bytes, app_task.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = app_gap_process_handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[185]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_std_process_event
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> app_entry_point.o(.constdata)
+</UL>
+<P><STRONG><a name="[16c]"></a>app_dis_init</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, app_diss.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;default_app_on_init
+</UL>
+
+<P><STRONG><a name="[97]"></a>app_diss_create_db</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, app_diss.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = app_diss_create_db
+</UL>
+<BR>[Calls]<UL><LI><a href="#[186]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_user_prf_srv_perm
+<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
+<LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> app.o(.constdata)
+</UL>
+<P><STRONG><a name="[a8]"></a>app_diss_process_handler</STRONG> (Thumb, 38 bytes, Stack size 48 bytes, app_diss_task.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = app_diss_process_handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[185]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_std_process_event
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> app_entry_point.o(.constdata)
+</UL>
+<P><STRONG><a name="[188]"></a>app_check_BLE_active</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, app_msg_utils.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_timer
+</UL>
+
+<P><STRONG><a name="[a7]"></a>app_timer_api_process_handler</STRONG> (Thumb, 122 bytes, Stack size 40 bytes, app_easy_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = app_timer_api_process_handler &rArr; call_callback_handler &rArr; call_callback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[18e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;call_callback_handler
+<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;modify_timer_handler
+<LI><a href="#[18c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cancel_timer_handler
+<LI><a href="#[18b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_timer_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> app_entry_point.o(.constdata)
+</UL>
+<P><STRONG><a name="[190]"></a>app_easy_timer</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, app_easy_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = app_easy_timer &rArr; create_timer
+</UL>
+<BR>[Calls]<UL><LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_timer
+<LI><a href="#[191]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_callback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_connection
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_adv_start
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adv_data_update_timer_cb
+<LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_svc1_led_wr_ind_handler
+</UL>
+
+<P><STRONG><a name="[181]"></a>app_easy_timer_cancel</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, app_easy_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = app_easy_timer_cancel
+</UL>
+<BR>[Calls]<UL><LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
+<LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
+<LI><a href="#[192]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_timer_clear
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_disconnect
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_connection
+<LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_advertise_with_timeout_stop
+</UL>
+
+<P><STRONG><a name="[7f]"></a>custs_get_func_callbacks</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, app_customs.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gattc_write_req_ind_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> custs1.o(.constdata)
+</UL>
+<P><STRONG><a name="[ac]"></a>app_custs1_create_db</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, app_customs.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = app_custs1_create_db
+</UL>
+<BR>[Calls]<UL><LI><a href="#[186]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_user_prf_srv_perm
+<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
+<LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> user_custs_config.o(.constdata)
+</UL>
+<P><STRONG><a name="[a9]"></a>app_custs1_process_handler</STRONG> (Thumb, 36 bytes, Stack size 48 bytes, app_customs_task.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = app_custs1_process_handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[185]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_std_process_event
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> app_entry_point.o(.constdata)
+</UL>
+<P><STRONG><a name="[f3]"></a>GPIO_reservations</STRONG> (Thumb, 290 bytes, Stack size 0 bytes, user_periph_setup.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_init
+</UL>
+
+<P><STRONG><a name="[193]"></a>set_pad_functions</STRONG> (Thumb, 112 bytes, Stack size 8 bytes, user_periph_setup.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = set_pad_functions &rArr; GPIO_ConfigurePin &rArr; GPIO_SetPinFunction
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ConfigurePin
+</UL>
+<BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph_init
+</UL>
+
+<P><STRONG><a name="[be]"></a>periph_init</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, user_periph_setup.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = periph_init &rArr; set_pad_functions &rArr; GPIO_ConfigurePin &rArr; GPIO_SetPinFunction
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;syscntl_dcdc_turn_on_in_boost
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_init
+<LI><a href="#[194]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;patch_func
+<LI><a href="#[193]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_pad_functions
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_resume_from_sleep
+</UL>
+
+<P><STRONG><a name="[195]"></a>user_svc1_led_time_wr_ind_handler</STRONG> (Thumb, 38 bytes, Stack size 24 bytes, user_custs1_impl.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = user_svc1_led_time_wr_ind_handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_catch_rest_hndl
+</UL>
+
+<P><STRONG><a name="[197]"></a>user_svc1_led_wr_ind_handler</STRONG> (Thumb, 174 bytes, Stack size 24 bytes, user_custs1_impl.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = user_svc1_led_wr_ind_handler &rArr; app_easy_timer &rArr; create_timer
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_timer
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+<LI><a href="#[198]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_ioExpander_RedHigh
+<LI><a href="#[199]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_ioExpander_GreenHigh
+<LI><a href="#[19a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_ioExpander_BlueHigh
+<LI><a href="#[196]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_ioExpander_AllLow
+<LI><a href="#[19b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_ioExpander_AllHigh
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_catch_rest_hndl
+</UL>
+
+<P><STRONG><a name="[31]"></a>user_app_init</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, user_peripheral.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = user_app_init &rArr; i2c_ioExpander_initialize &rArr; i2c_ioExpander_AllLow &rArr; i2c_master_transmit_buffer_sync
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;default_app_on_init
+<LI><a href="#[1a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_ioExpander_initialize
+<LI><a href="#[19f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mnf_data_init
+</UL>
+<BR>[Address Reference Count : 2]<UL><LI> arch_main.o(.constdata)
+<LI> arch_system.o(.constdata)
+</UL>
+<P><STRONG><a name="[8b]"></a>user_app_adv_start</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, user_peripheral.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = user_app_adv_start &rArr; app_add_ad_struct
+</UL>
+<BR>[Calls]<UL><LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_timer
+<LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_undirected_advertise_get_active
+<LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_undirected_advertise_start
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_recommended_settings
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_pa_pwr_set
+<LI><a href="#[19c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_add_ad_struct
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_disconnect
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_connection
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_adv_undirect_complete
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> app_default_handlers.o(.constdata)
+</UL>
+<P><STRONG><a name="[8c]"></a>user_app_connection</STRONG> (Thumb, 112 bytes, Stack size 16 bytes, user_peripheral.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = user_app_connection &rArr; user_app_adv_start &rArr; app_add_ad_struct
+</UL>
+<BR>[Calls]<UL><LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_timer_cancel
+<LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_timer
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_adv_start
+<LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;default_app_on_connection
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_recommended_settings
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_pa_pwr_set
+</UL>
+<BR>[Address Reference Count : 3]<UL><LI> app.o(.constdata)
+<LI> app_task.o(.constdata)
+<LI> app_entry_point.o(.constdata)
+</UL>
+<P><STRONG><a name="[8f]"></a>user_app_adv_undirect_complete</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, user_peripheral.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = user_app_adv_undirect_complete &rArr; user_app_adv_start &rArr; app_add_ad_struct
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_adv_start
+</UL>
+<BR>[Address Reference Count : 3]<UL><LI> app.o(.constdata)
+<LI> app_task.o(.constdata)
+<LI> app_entry_point.o(.constdata)
+</UL>
+<P><STRONG><a name="[8d]"></a>user_app_disconnect</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, user_peripheral.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = user_app_disconnect &rArr; user_app_adv_start &rArr; app_add_ad_struct
+</UL>
+<BR>[Calls]<UL><LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_timer_cancel
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_adv_start
+<LI><a href="#[19d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mnf_data_update
+</UL>
+<BR>[Address Reference Count : 3]<UL><LI> app.o(.constdata)
+<LI> app_task.o(.constdata)
+<LI> app_entry_point.o(.constdata)
+</UL>
+<P><STRONG><a name="[2b]"></a>user_catch_rest_hndl</STRONG> (Thumb, 86 bytes, Stack size 40 bytes, user_peripheral.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = user_catch_rest_hndl &rArr; user_svc1_led_wr_ind_handler &rArr; app_easy_timer &rArr; create_timer
+</UL>
+<BR>[Calls]<UL><LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_svc1_led_wr_ind_handler
+<LI><a href="#[195]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_svc1_led_time_wr_ind_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_cmp_evt_handler
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapm_cmp_evt_handler
+</UL>
+<BR>[Address Reference Count : 2]<UL><LI> app_task.o(.text)
+<LI> app_entry_point.o(.constdata)
+</UL>
+<P><STRONG><a name="[196]"></a>i2c_ioExpander_AllLow</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, user_io_expander_driver.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = i2c_ioExpander_AllLow &rArr; i2c_master_transmit_buffer_sync
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_master_transmit_buffer_sync
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_ioExpander_initialize
+<LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_svc1_led_wr_ind_handler
+<LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_cb
+</UL>
+
+<P><STRONG><a name="[1a0]"></a>i2c_ioExpander_initialize</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, user_io_expander_driver.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = i2c_ioExpander_initialize &rArr; i2c_ioExpander_AllLow &rArr; i2c_master_transmit_buffer_sync
+</UL>
+<BR>[Calls]<UL><LI><a href="#[196]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_ioExpander_AllLow
+</UL>
+<BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_init
+</UL>
+
+<P><STRONG><a name="[19b]"></a>i2c_ioExpander_AllHigh</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, user_io_expander_driver.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = i2c_ioExpander_AllHigh &rArr; i2c_master_transmit_buffer_sync
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_master_transmit_buffer_sync
+</UL>
+<BR>[Called By]<UL><LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_svc1_led_wr_ind_handler
+</UL>
+
+<P><STRONG><a name="[198]"></a>i2c_ioExpander_RedHigh</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, user_io_expander_driver.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = i2c_ioExpander_RedHigh &rArr; i2c_master_transmit_buffer_sync
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_master_transmit_buffer_sync
+</UL>
+<BR>[Called By]<UL><LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_svc1_led_wr_ind_handler
+</UL>
+
+<P><STRONG><a name="[199]"></a>i2c_ioExpander_GreenHigh</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, user_io_expander_driver.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = i2c_ioExpander_GreenHigh &rArr; i2c_master_transmit_buffer_sync
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_master_transmit_buffer_sync
+</UL>
+<BR>[Called By]<UL><LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_svc1_led_wr_ind_handler
+</UL>
+
+<P><STRONG><a name="[19a]"></a>i2c_ioExpander_BlueHigh</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, user_io_expander_driver.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = i2c_ioExpander_BlueHigh &rArr; i2c_master_transmit_buffer_sync
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_master_transmit_buffer_sync
+</UL>
+<BR>[Called By]<UL><LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_svc1_led_wr_ind_handler
+</UL>
+
+<P><STRONG><a name="[59]"></a>JT_lld_test_mode_rx_func</STRONG> (Thumb, 142 bytes, Stack size 24 bytes, patch.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = JT_lld_test_mode_rx_func
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_util_freq2chnl
+<LI><a href="#[1a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_evt_adv_create
+<LI><a href="#[1a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_evt_elt_insert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[66]"></a>JT_l2cc_pdu_unpack_func</STRONG> (Thumb, 786 bytes, Stack size 80 bytes, patch.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = JT_l2cc_pdu_unpack_func
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[1a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gapc_lecnx_check_rx
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[69]"></a>JT_l2cc_pdu_recv_ind_handler_func</STRONG> (Thumb, 72 bytes, Stack size 40 bytes, patch.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = JT_l2cc_pdu_recv_ind_handler_func
+</UL>
+<BR>[Calls]<UL><LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_state_get
+<LI><a href="#[1a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;l2cc_pdu_recv_ind_handler_func
+<LI><a href="#[1a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;smpc_pdu_recv
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.constdata)
+</UL>
+<P><STRONG><a name="[194]"></a>patch_func</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, patch.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph_init
+</UL>
+
+<P><STRONG><a name="[e8]"></a>patch_global_vars_init</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, patch.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_rom_init
+</UL>
+
+<P><STRONG><a name="[ae]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
+</UL>
+
+<P><STRONG><a name="[1f3]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[cd]"></a>__ARM_common_ll_muluu</STRONG> (Thumb, 48 bytes, Stack size 24 bytes, arch_system.o(i.__ARM_common_ll_muluu))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __ARM_common_ll_muluu
+</UL>
+<BR>[Called By]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_lpcycles_2_us_rcx_func
+</UL>
+
+<P><STRONG><a name="[1f4]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[1f5]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[1f6]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[af]"></a>__NVIC_DisableIRQ</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, system_da14531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, startup_da14531.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, startup_da14531.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(RESET)
+</UL>
+<P><STRONG><a name="[b1]"></a>arch_goto_sleep</STRONG> (Thumb, 216 bytes, Stack size 24 bytes, arch_main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = arch_goto_sleep &rArr; arch_turn_peripherals_off &rArr; otp_prepare &rArr; hw_otpc_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_turn_peripherals_off
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b3]"></a>schedule_while_ble_on</STRONG> (Thumb, 182 bytes, Stack size 16 bytes, arch_main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = schedule_while_ble_on &rArr; conditionally_run_radio_cals &rArr; rf_recalibration &rArr; rf_calibration &rArr; kdtc_calibration &rArr; dis_hclk
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_schedule
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_rcx_freq
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ea_sleep_check
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;conditionally_run_radio_cals
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[bb]"></a>arch_resume_from_sleep</STRONG> (Thumb, 172 bytes, Stack size 8 bytes, arch_main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = arch_resume_from_sleep &rArr; periph_init &rArr; set_pad_functions &rArr; GPIO_ConfigurePin &rArr; GPIO_SetPinFunction
+</UL>
+<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph_init
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_mem_init
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_get_sleep_mode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b2]"></a>arch_turn_peripherals_off</STRONG> (Thumb, 160 bytes, Stack size 16 bytes, arch_main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = arch_turn_peripherals_off &rArr; otp_prepare &rArr; hw_otpc_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_mem_is_empty
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_prepare
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_goto_sleep
+</UL>
+
+<P><STRONG><a name="[b8]"></a>init_retention_mode</STRONG> (Thumb, 236 bytes, Stack size 0 bytes, arch_main.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[bf]"></a>otp_prepare</STRONG> (Thumb, 144 bytes, Stack size 8 bytes, arch_main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = otp_prepare &rArr; hw_otpc_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hw_otpc_clear_dcdc_reserved
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hw_otpc_init
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;syscntl_dcdc_set_level
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_turn_peripherals_off
+</UL>
+
+<P><STRONG><a name="[cb]"></a>select_lp_clk</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, arch_system.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_pwr_and_clk_ble
+</UL>
+
+<P><STRONG><a name="[eb]"></a>calc_adc_ge</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, otp_cs.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_store
+</UL>
+
+<P><STRONG><a name="[ec]"></a>calc_adc_offset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, otp_cs.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_store
+</UL>
+
+<P><STRONG><a name="[f2]"></a>dcdc_cfg</STRONG> (Thumb, 76 bytes, Stack size 0 bytes, syscntl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;syscntl_dcdc_turn_on_in_boost
+</UL>
+
+<P><STRONG><a name="[fa]"></a>gpioshift16</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, gpio.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetIRQ
+</UL>
+
+<P><STRONG><a name="[1e3]"></a>wkupct_quad_disable_IRQ</STRONG> (Thumb, 98 bytes, Stack size 0 bytes, wkupct_quadec.o(.text), UNUSED)
+<BR><BR>[Called By]<UL></UL>
+
+<P><STRONG><a name="[104]"></a>__NVIC_DisableIRQ</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, adc_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_init
+</UL>
+
+<P><STRONG><a name="[fd]"></a>adc_configure</STRONG> (Thumb, 452 bytes, Stack size 8 bytes, adc_531.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = adc_configure
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_set_se_input
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_set_diff_input
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_temp_sensor_enable
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_temp_sensor_disable
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_get_adc_25_cal
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_init
+</UL>
+
+<P><STRONG><a name="[106]"></a>adc_correction_apply</STRONG> (Thumb, 124 bytes, Stack size 24 bytes, adc_531.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_get_adc_single_offset
+<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_get_adc_single_ge
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_get_adc_offsh_offset
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_get_adc_offsh_ge
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_get_adc_diff_offset
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;otp_cs_get_adc_diff_ge
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL></UL>
+
+<P><STRONG><a name="[113]"></a>tx_reply</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, i2c.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_unregister_int
+</UL>
+<BR>[Called By]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;intr_slave_transmit_buffer_handler
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;intr_master_transmit_buffer_handler
+</UL>
+
+<P><STRONG><a name="[115]"></a>intr_master_transmit_buffer_handler</STRONG> (Thumb, 200 bytes, Stack size 16 bytes, i2c.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tx_reply
+</UL>
+
+<P><STRONG><a name="[116]"></a>rx_reply</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, i2c.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_unregister_int
+</UL>
+<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;intr_slave_receive_buffer_handler
+<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;intr_master_receive_buffer_handler
+</UL>
+
+<P><STRONG><a name="[117]"></a>intr_master_receive_buffer_handler</STRONG> (Thumb, 186 bytes, Stack size 16 bytes, i2c.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rx_reply
+</UL>
+
+<P><STRONG><a name="[118]"></a>intr_slave_receive_buffer_handler</STRONG> (Thumb, 118 bytes, Stack size 16 bytes, i2c.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rx_reply
+</UL>
+
+<P><STRONG><a name="[119]"></a>intr_slave_transmit_buffer_handler</STRONG> (Thumb, 210 bytes, Stack size 16 bytes, i2c.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tx_reply
+</UL>
+
+<P><STRONG><a name="[11a]"></a>intr_handler</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, i2c.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = intr_handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_ClearPendingIRQ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Handler
+</UL>
+
+<P><STRONG><a name="[11b]"></a>__NVIC_ClearPendingIRQ</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, i2c.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_unregister_int
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;intr_handler
+</UL>
+
+<P><STRONG><a name="[112]"></a>__NVIC_SetPriority</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, i2c.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __NVIC_SetPriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_init
+</UL>
+
+<P><STRONG><a name="[11d]"></a>dcdc_cfg</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, hw_otpc_531.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = dcdc_cfg
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;syscntl_dcdc_set_level
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;syscntl_dcdc_get_level
+</UL>
+<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hw_otpc_enter_mode
+</UL>
+
+<P><STRONG><a name="[120]"></a>hw_otpc_read_verif</STRONG> (Thumb, 78 bytes, Stack size 40 bytes, hw_otpc_531.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hw_otpc_enter_mode
+</UL>
+<BR>[Called By]<UL></UL>
+
+<P><STRONG><a name="[11e]"></a>__set_PRIMASK</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, hw_otpc_531.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hw_otpc_init
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hw_otpc_disable
+</UL>
+
+<P><STRONG><a name="[124]"></a>uart_tx_isr</STRONG> (Thumb, 152 bytes, Stack size 16 bytes, uart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = uart_tx_isr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_intr_hndl
+</UL>
+
+<P><STRONG><a name="[122]"></a>uart_rx_isr</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, uart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = uart_rx_isr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_intr_hndl
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_rx_timeout_isr
+</UL>
+
+<P><STRONG><a name="[121]"></a>uart_rx_timeout_isr</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, uart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = uart_rx_timeout_isr &rArr; uart_rx_isr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_rx_isr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_intr_hndl
+</UL>
+
+<P><STRONG><a name="[125]"></a>uart_rls_isr</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, uart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = uart_rls_isr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_intr_hndl
+</UL>
+
+<P><STRONG><a name="[126]"></a>uart_busy_isr</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, uart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = uart_busy_isr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_intr_hndl
+</UL>
+
+<P><STRONG><a name="[123]"></a>uart_intr_hndl</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, uart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = uart_intr_hndl &rArr; uart_rx_timeout_isr &rArr; uart_rx_isr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_busy_isr
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_rls_isr
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_rx_timeout_isr
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_rx_isr
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_tx_isr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART2_Handler
+</UL>
+
+<P><STRONG><a name="[129]"></a>get_extra_samples</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, trng.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_rand_seed_from_trng
+</UL>
+
+<P><STRONG><a name="[127]"></a>feed_seed_to_rand</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, trng.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = feed_seed_to_rand
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dia_srand
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_rand_seed_from_trng
+</UL>
+
+<P><STRONG><a name="[12c]"></a>lld_sleep_compensate_core</STRONG> (Thumb, 84 bytes, Stack size 24 bytes, rwble.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = lld_sleep_compensate_core
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lld_sleep_compensate_func
+</UL>
+
+<P><STRONG><a name="[13a]"></a>rwip_slot_2_lpcycles</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, rwip.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = rwip_slot_2_lpcycles
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+</UL>
+
+<P><STRONG><a name="[13b]"></a>rwip_slot_2_lpcycles_rcx</STRONG> (Thumb, 50 bytes, Stack size 32 bytes, rwip.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = rwip_slot_2_lpcycles_rcx
+</UL>
+<BR>[Calls]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_lmul
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+</UL>
+
+<P><STRONG><a name="[140]"></a>get_max_sleep_duration</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rwip.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
+</UL>
+
+<P><STRONG><a name="[27]"></a>rf_reset</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, ble_arp.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> ble_arp.o(.text)
+</UL>
+<P><STRONG><a name="[2a]"></a>rf_rssi_convert</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, ble_arp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = rf_rssi_convert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> ble_arp.o(.text)
+</UL>
+<P><STRONG><a name="[28]"></a>RADIOCNTL_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, ble_arp.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> ble_arp.o(.text)
+</UL>
+<P><STRONG><a name="[29]"></a>rf_force_agc_enable</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, ble_arp.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> ble_arp.o(.text)
+</UL>
+<P><STRONG><a name="[25]"></a>rf_txpwr_dbm_get</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, ble_arp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = rf_txpwr_dbm_get
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_pa_pwr_get
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> ble_arp.o(.text)
+</UL>
+<P><STRONG><a name="[26]"></a>rf_sleep</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, ble_arp.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> ble_arp.o(.text)
+</UL>
+<P><STRONG><a name="[151]"></a>update_radiopwrupdn_pref_setting</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, ble_arp.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_reinit_func
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_init_func
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_recalibration
+</UL>
+
+<P><STRONG><a name="[148]"></a>rf_regs</STRONG> (Thumb, 70 bytes, Stack size 8 bytes, ble_arp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = rf_regs
+</UL>
+<BR>[Calls]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;syscntl_cfg_xtal32m_amp_reg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_reinit_func
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_init_func
+</UL>
+
+<P><STRONG><a name="[14b]"></a>ble_update_arp_adpll_div_val</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, ble_arp.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_reinit_func
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_update_arp
+</UL>
+
+<P><STRONG><a name="[14a]"></a>ble_update_arp_adpll_calib_vals</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, ble_arp.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_recalibration
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_update_arp
+</UL>
+
+<P><STRONG><a name="[149]"></a>ble_update_arp</STRONG> (Thumb, 100 bytes, Stack size 8 bytes, ble_arp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ble_update_arp
+</UL>
+<BR>[Calls]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_update_arp_adpll_calib_vals
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_update_arp_adpll_div_val
+</UL>
+<BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_init_func
+</UL>
+
+<P><STRONG><a name="[81]"></a>gattc_write_req_ind_handler</STRONG> (Thumb, 354 bytes, Stack size 64 bytes, custs1_task.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = gattc_write_req_ind_handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prf_env_get
+<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prf_dst_task_get
+<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
+<LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
+<LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_value_handle
+<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;custs1_set_ccc_value
+<LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;custs1_get_att_idx
+<LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_client_char_cfg
+<LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;attmdb_get_attribute
+<LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;attmdb_att_set_value
+<LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;attmdb_att_get_permission
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;custs_get_func_callbacks
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> custs1_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[172]"></a>app_task_in_user_app</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, app.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_db_init_next
+<LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_prf_enable
+</UL>
+
+<P><STRONG><a name="[173]"></a>app_easy_gap_non_connectable_advertise_start_create_msg</STRONG> (Thumb, 184 bytes, Stack size 16 bytes, app.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;append_device_name
+<LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
+</UL>
+<BR>[Called By]<UL></UL>
+
+<P><STRONG><a name="[175]"></a>app_easy_gap_undirected_advertise_start_create_msg</STRONG> (Thumb, 204 bytes, Stack size 16 bytes, app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = app_easy_gap_undirected_advertise_start_create_msg
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;append_device_name
+<LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_undirected_advertise_get_active
+<LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_undirected_advertise_start
+</UL>
+
+<P><STRONG><a name="[176]"></a>app_easy_gap_directed_advertise_start_create_msg</STRONG> (Thumb, 180 bytes, Stack size 16 bytes, app.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
+</UL>
+<BR>[Called By]<UL></UL>
+
+<P><STRONG><a name="[177]"></a>app_easy_gap_param_update_msg_create</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = app_easy_gap_param_update_msg_create
+</UL>
+<BR>[Calls]<UL><LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[182]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_param_update_start
+</UL>
+
+<P><STRONG><a name="[178]"></a>app_easy_gap_start_connection_to_msg_create</STRONG> (Thumb, 150 bytes, Stack size 16 bytes, app.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
+</UL>
+<BR>[Called By]<UL></UL>
+
+<P><STRONG><a name="[179]"></a>app_easy_gap_dev_config_create_msg</STRONG> (Thumb, 250 bytes, Stack size 24 bytes, app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = app_easy_gap_dev_config_create_msg
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
+<LI><a href="#[17a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+<LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_dev_configure
+</UL>
+
+<P><STRONG><a name="[17c]"></a>app_easy_gap_advertise_stop_handler</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, app.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[17d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_advertise_stop
+</UL>
+
+<P><STRONG><a name="[98]"></a>gapm_device_ready_ind_handler</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, app_task.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = gapm_device_ready_ind_handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_state_get
+<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
+<LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[99]"></a>gapm_cmp_evt_handler</STRONG> (Thumb, 212 bytes, Stack size 24 bytes, app_task.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = gapm_cmp_evt_handler &rArr; user_catch_rest_hndl &rArr; user_svc1_led_wr_ind_handler &rArr; app_easy_timer &rArr; create_timer
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_catch_rest_hndl
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_dev_configure
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[9b]"></a>gapc_connection_req_ind_handler</STRONG> (Thumb, 144 bytes, Stack size 24 bytes, app_task.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = gapc_connection_req_ind_handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[184]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_confirm
+<LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_state_set
+<LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_state_get
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[9a]"></a>gapc_cmp_evt_handler</STRONG> (Thumb, 94 bytes, Stack size 24 bytes, app_task.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = gapc_cmp_evt_handler &rArr; user_catch_rest_hndl &rArr; user_svc1_led_wr_ind_handler &rArr; app_easy_timer &rArr; create_timer
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_catch_rest_hndl
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[9c]"></a>gapc_disconnect_ind_handler</STRONG> (Thumb, 76 bytes, Stack size 24 bytes, app_task.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = gapc_disconnect_ind_handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_state_get
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[9d]"></a>gapc_get_dev_info_req_ind_handler</STRONG> (Thumb, 220 bytes, Stack size 56 bytes, app_task.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = gapc_get_dev_info_req_ind_handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
+<LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[a5]"></a>diss_value_req_ind_handler</STRONG> (Thumb, 162 bytes, Stack size 40 bytes, app_diss_task.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = diss_value_req_ind_handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
+<LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> app_diss_task.o(.constdata)
+</UL>
+<P><STRONG><a name="[191]"></a>set_callback</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, app_easy_timer.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_timer
+</UL>
+
+<P><STRONG><a name="[2d]"></a>timer_canceled_handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, app_easy_timer.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> app_easy_timer.o(.text)
+</UL>
+<P><STRONG><a name="[2c]"></a>timer_modified_handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, app_easy_timer.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> app_easy_timer.o(.text)
+</UL>
+<P><STRONG><a name="[18f]"></a>call_callback</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, app_easy_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = call_callback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[18e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;call_callback_handler
+</UL>
+
+<P><STRONG><a name="[187]"></a>create_timer</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, app_easy_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = create_timer
+</UL>
+<BR>[Calls]<UL><LI><a href="#[18a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_ble_force_wakeup
+<LI><a href="#[188]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_check_BLE_active
+<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
+<LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
+<LI><a href="#[189]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_timer_set
+</UL>
+<BR>[Called By]<UL><LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;modify_timer_handler
+<LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_timer
+</UL>
+
+<P><STRONG><a name="[18b]"></a>create_timer_handler</STRONG> (Thumb, 58 bytes, Stack size 24 bytes, app_easy_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = create_timer_handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[189]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_timer_set
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_api_process_handler
+</UL>
+
+<P><STRONG><a name="[18c]"></a>cancel_timer_handler</STRONG> (Thumb, 106 bytes, Stack size 24 bytes, app_easy_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = cancel_timer_handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
+<LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_api_process_handler
+</UL>
+
+<P><STRONG><a name="[18d]"></a>modify_timer_handler</STRONG> (Thumb, 68 bytes, Stack size 24 bytes, app_easy_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = modify_timer_handler &rArr; create_timer
+</UL>
+<BR>[Calls]<UL><LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_timer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_api_process_handler
+</UL>
+
+<P><STRONG><a name="[18e]"></a>call_callback_handler</STRONG> (Thumb, 26 bytes, Stack size 24 bytes, app_easy_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = call_callback_handler &rArr; call_callback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[18f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;call_callback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_api_process_handler
+</UL>
+
+<P><STRONG><a name="[2e]"></a>timer_cb</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, user_custs1_impl.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = timer_cb &rArr; i2c_ioExpander_AllLow &rArr; i2c_master_transmit_buffer_sync
+</UL>
+<BR>[Calls]<UL><LI><a href="#[196]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_ioExpander_AllLow
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> user_custs1_impl.o(.text)
+</UL>
+<P><STRONG><a name="[19f]"></a>mnf_data_init</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, user_peripheral.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_init
+</UL>
+
+<P><STRONG><a name="[19d]"></a>mnf_data_update</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, user_peripheral.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_disconnect
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adv_data_update_timer_cb
+</UL>
+
+<P><STRONG><a name="[19c]"></a>app_add_ad_struct</STRONG> (Thumb, 178 bytes, Stack size 40 bytes, user_peripheral.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = app_add_ad_struct
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_adv_start
+</UL>
+
+<P><STRONG><a name="[2f]"></a>adv_data_update_timer_cb</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, user_peripheral.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = adv_data_update_timer_cb &rArr; app_easy_timer &rArr; create_timer
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_timer
+<LI><a href="#[19e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_update_adv_data
+<LI><a href="#[19d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mnf_data_update
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> user_peripheral.o(.text)
+</UL>
+<P><STRONG><a name="[30]"></a>param_update_request_timer_cb</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, user_peripheral.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = param_update_request_timer_cb &rArr; app_easy_gap_param_update_start &rArr; app_easy_gap_param_update_msg_create
+</UL>
+<BR>[Calls]<UL><LI><a href="#[182]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_easy_gap_param_update_start
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> user_peripheral.o(.text)
+</UL><P>
+<H3>
+Undefined Global Symbols
+</H3>
+<P><STRONG><a name="[d9]"></a>reset_indication</STRONG> (ARM, 0 bytes, Stack size 0 bytes, UNDEFINED)
+<BR><BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
+</UL>
+<HR></body></html>
