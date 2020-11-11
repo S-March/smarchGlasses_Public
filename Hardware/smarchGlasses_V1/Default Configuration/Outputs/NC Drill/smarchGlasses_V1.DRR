@@ -1,0 +1,16 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: smarchGlasses_V1.CSPcbDoc   9/23/2020  7:52:38 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : smarchGlasses_V1.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        13mil (0.3302mm)         Round          63               7.00 Inch (177.85 mm)
+T2        40.2mil (1.02108mm)      Round          1                0.00 Inch (0.00 mm)
+T3        39mil (0.9906mm)         Round          3         NPTH   0.28 Inch (7.21 mm)
+---------------------------------------------------------------------------
+Totals                                            67               7.29 Inch (185.07 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:01

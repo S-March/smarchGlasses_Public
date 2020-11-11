@@ -1,0 +1,46 @@
+Designator Footprint               Mid X         Mid Y         Ref X         Ref Y         Pad X         Pad Y TB      Rotation Comment        
+
+BAT1       LIR1220           2027.559mil    147.638mil   2027.559mil    147.638mil   2027.559mil    147.638mil  T          0.00 LIR1220        
+U7         PCA9570GMH             475mil        180mil        475mil        180mil    449.409mil    199.685mil  T          0.00 PCA9570GMH     
+R15        RES_0402_HIGH      231.299mil      78.74mil    231.299mil      78.74mil    231.299mil     61.024mil  T         90.00 10k            
+R14        RES_0402_HIGH      231.299mil    147.638mil    231.299mil    147.638mil    231.299mil    129.921mil  T         90.00 10k            
+R13        RES_0402_HIGH      231.299mil    216.535mil    231.299mil    216.535mil    231.299mil    198.819mil  T         90.00 10k            
+R12        RES_0402_HIGH      142.717mil      78.74mil    142.717mil      78.74mil    142.717mil     61.024mil  T         90.00 100            
+R11        RES_0402_HIGH      142.717mil    147.638mil    142.717mil    147.638mil    142.717mil    129.921mil  T         90.00 100            
+R2         RES_0402_HIGH      142.717mil    216.535mil    142.717mil    216.535mil    142.717mil    198.819mil  T         90.00 200            
+Q5         PMZ550UNEYL        187.008mil      78.74mil    187.008mil      78.74mil    187.008mil     65.945mil  T        270.00 PMZ550UNEYL    
+Q4         PMZ550UNEYL        187.008mil    147.638mil    187.008mil    147.638mil    187.008mil    134.843mil  T        270.00 PMZ550UNEYL    
+Q3         PMZ550UNEYL        187.008mil    216.535mil    187.008mil    216.535mil    187.008mil     203.74mil  T        270.00 PMZ550UNEYL    
+C1         CAP_0402_HIGH          525mil         90mil        525mil         90mil        525mil     72.284mil  T         90.00 1uF            
+C2         CAP_0402_HIGH          940mil        115mil        940mil        115mil        940mil     97.284mil  T         90.00 10uF           
+C3         CAP_0402_HIGH         1330mil        210mil       1330mil        210mil       1330mil    192.284mil  T         90.00 4.7uF          
+C4         CAP_0402_HIGH         1375mil        210mil       1375mil        210mil       1375mil    227.716mil  T        270.00 4.7uF          
+C5         CAP_0402_HIGH         1330mil        135mil       1330mil        135mil       1330mil    152.716mil  T        270.00 4.7uF          
+C6         CAP_0402_HIGH         1270mil        155mil       1270mil        155mil   1287.716mil        155mil  T        180.00 10uF           
+C7         CAP_0402_HIGH         1420mil        135mil       1420mil        135mil       1420mil    152.716mil  T        270.00 100nF          
+C8         CAP_0402_HIGH          985mil        115mil        985mil        115mil        985mil     97.284mil  T         90.00 10uF           
+C9         CAP_0402_HIGH          985mil        190mil        985mil        190mil        985mil    207.716mil  T        270.00 1uF            
+D1         APTF1616LSEEZGKQBKC     73.819mil    147.638mil     73.819mil    147.638mil     56.102mil    113.189mil  T         90.00 APTF1616LSEEZGKQBKC
+L1         CIGT201610EH2R2MNE    590.827mil         70mil    590.827mil         70mil    590.827mil     38.504mil  T         90.00 CIGT201610EH2R2MNE
+L2         CIGT201610EH2R2MNE       1260mil         80mil       1260mil         80mil       1260mil     48.504mil  T         90.00 CIGT201610EH2R2MNE
+P1         TC2030-CTX-NL      339.567mil    147.638mil    339.567mil    147.638mil    364.567mil     97.638mil  T         90.00 TC2030-CTX-NL  
+Q2         ECH8693R              1615mil         90mil       1615mil         90mil   1559.882mil    128.386mil  T        180.00 ECH8693R       
+R1         RES_0402_HIGH          940mil        190mil        940mil        190mil        940mil    207.716mil  T        270.00 10K            
+R3         RES_0402_HIGH          810mil         40mil        810mil         40mil    792.284mil         40mil  T          0.00 10K            
+R4         RES_0402_HIGH         1030mil        190mil       1030mil        190mil       1030mil    207.716mil  T        270.00 10K            
+R5         RES_0402_HIGH         1030mil        115mil       1030mil        115mil       1030mil     97.284mil  T         90.00 10K            
+R6         RES_0402_HIGH         1595mil        210mil       1595mil        210mil       1595mil    227.716mil  T        270.00 66.5k          
+R7         RES_0402_HIGH         1375mil        135mil       1375mil        135mil       1375mil    152.716mil  T        270.00 330            
+R8         RES_0402_HIGH         1420mil         60mil       1420mil         60mil       1420mil     42.283mil  T         90.00 2.2K           
+R9         RES_0402_HIGH         1490mil         30mil       1490mil         30mil   1507.716mil         30mil  T        180.00 5.1M           
+R10        RES_0402_HIGH         1490mil        150mil       1490mil        150mil   1472.284mil        150mil  T        360.00 5.1M           
+U1         DA14531_QFN        695.827mil        160mil    695.827mil        160mil    659.902mil     199.37mil  T        360.00 DA14531        
+U2         W25X20CLUXIG           810mil        145mil        810mil        145mil    780.472mil      88.11mil  T         90.00 W25X20CLUXIG   
+U3         MCP73831T-2ACI/MC       1485mil        220mil       1485mil        220mil   1429.291mil    249.528mil  T        360.00 MCP73831T-2ACI/MC
+U4         LM3671-BGA            1355mil         60mil       1355mil         60mil   1364.842mil     42.953mil  T        180.00 LM3671         
+U5         BQ29700DSER           1490mil         90mil       1490mil         90mil   1512.638mil     70.315mil  T        180.00 BQ29700DSER    
+U6         LIS3DH            1135.003mil    114.997mil       1135mil        115mil   1174.373mil    168.737mil  T        270.00 LIS3DH         
+X1         ECS-320-8-37B-CKY    590.827mil        180mil    590.827mil        180mil    611.496mil    153.425mil  T         90.00 ECS-320-8-37B-CKY
+Q1         BSS84AKM,315           890mil        195mil        890mil        195mil    898.957mil    207.795mil  T        270.00 BSS84AKM,315   
+D2         D5V0L1B2LP4-7B        1285mil        210mil       1285mil        210mil       1285mil    225.748mil  T        270.00 D5V0L1B2LP4-7B 
+
