@@ -19,4 +19,4 @@ To download the SDK for the DA14531, you can [click this link](https://support.d
 
 If you want to order PCBs from the same place I did, you can [click this link](https://www.pcbway.com/project/shareproject/smarchGlasses.html).
 
-For more info on the build process and a blog describing the process, [click here](https://imgur.com/a/FSBwD3g).
+For more info on the build process and a blog describing the process, [click here](https://imgur.com/gallery/8lY43kp).
